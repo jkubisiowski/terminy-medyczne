@@ -1,3 +1,8 @@
+# Rider
+.idea/
+.vs/
+
+
 # Logs
 logs
 *.log
