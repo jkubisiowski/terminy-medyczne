@@ -1,28 +1,22 @@
-import Link from 'next/link'
-import groq from 'groq'
-import client from '../client'
+import React from 'react'
+import Layout from '../components/Layout'
+import StartPage from "./StartPage";
+import client from "../client";
+import groq from "groq";
 
-const Index = (props) => {
-    const { terms = [] } = props
-    return (
-        <div>
-            <h1>Welcome to a blog!</h1>
-            {terms.map(
-                ({ _id, name = '', slug = '', _updatedAt = '' }) =>
-                    slug && (
-                        <li key={_id}>
-                            <Link href="/term/[slug]" as={`/term/${slug.current}`}>
-                                <a>{name}</a>
-                            </Link>{' '}                            
-                        </li>
-                    )
-            )}
-        </div>
-    )
+const IndexPage = (props) => {
+  const {terms = []} = props;
+
+  return (
+    <Layout>
+      <StartPage terms={terms}/>
+    </Layout>
+  )
+
 }
 
-Index.getInitialProps = async () => ({
-    terms: await client.fetch(groq`*[_type == "term"]`)
+IndexPage.getInitialProps = async () => ({
+  terms: await client.fetch(groq`*[_type == "term"]`)
 })
 
-export default Index
+export default IndexPage
