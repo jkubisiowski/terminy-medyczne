@@ -7,18 +7,18 @@ function urlFor (source) {
     return imageUrlBuilder(client).image(source)
 }
 
-const Post = (props) => {
+const Term = (props) => {
     const {
-        title = 'Missing title',
         name = 'Missing name',
+        authorName = 'Missing author name',
         categories,
         authorImage,
         body = []
     } = props
     return (
         <article>
-            <h1>{title}</h1>
-            <span>By {name}</span>
+            <h1>{name}</h1>
+            <span>By {authorName}</span>
             {categories && (
                 <ul>
                     Posted in
@@ -31,7 +31,7 @@ const Post = (props) => {
                         src={urlFor(authorImage)
                             .width(50)
                             .url()}
-                    />
+                     alt={authorImage}/>
                 </div>
             )}
             <BlockContent
@@ -43,18 +43,18 @@ const Post = (props) => {
     )
 }
 
-const query = groq`*[_type == "post" && slug.current == $slug][0]{
-  title,
-  "name": author->name,
+const query = groq`*[_type == "term" && slug.current == $slug][0]{
+  name,
+  "authorName": author->name,
   "categories": categories[]->title,
   "authorImage": author->image,
   body
 }`
 
-Post.getInitialProps = async function (context) {
+Term.getInitialProps = async function (context) {
     // It's important to default the slug so that it doesn't return "undefined"
     const { slug = "" } = context.query
     return await client.fetch(query, { slug })
 }
 
-export default Post
+export default Term

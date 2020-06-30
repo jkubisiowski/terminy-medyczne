@@ -3,16 +3,16 @@ import groq from 'groq'
 import client from '../client'
 
 const Index = (props) => {
-    const { posts = [] } = props
+    const { terms = [] } = props
     return (
         <div>
             <h1>Welcome to a blog!</h1>
-            {posts.map(
-                ({ _id, title = '', slug = '', _updatedAt = '' }) =>
+            {terms.map(
+                ({ _id, name = '', slug = '', _updatedAt = '' }) =>
                     slug && (
                         <li key={_id}>
-                            <Link href="/post/[slug]" as={`/post/${slug.current}`}>
-                                <a>{title}</a>
+                            <Link href="/term/[slug]" as={`/term/${slug.current}`}>
+                                <a>{name}</a>
                             </Link>{' '}                            
                         </li>
                     )
@@ -22,7 +22,7 @@ const Index = (props) => {
 }
 
 Index.getInitialProps = async () => ({
-    posts: await client.fetch(groq`*[_type == "post"]`)
+    terms: await client.fetch(groq`*[_type == "term"]`)
 })
 
 export default Index
