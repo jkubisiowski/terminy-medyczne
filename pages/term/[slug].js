@@ -2,11 +2,12 @@ import groq from 'groq'
 import client from '../../client'
 import React from "react";
 import Layout from "../../components/layout/Layout";
+import TermPage from "../../components/pages/TermPage";
 
 const TermPageWrapper = (props) => {
   return (
     <Layout>
-      Dupa
+      <TermPage {...props}/>
     </Layout>
   )
 }

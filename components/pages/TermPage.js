@@ -7,7 +7,7 @@ function urlFor(source) {
   return imageUrlBuilder(client).image(source)
 }
 
-export const Term = (props) => {
+const TermPage = (props) => {
   const {
     name = 'Missing name',
     authorName = 'Missing author name',
@@ -41,3 +41,5 @@ export const Term = (props) => {
     />
   </article>)
 }
+
+export default TermPage
