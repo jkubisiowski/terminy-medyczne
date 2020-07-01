@@ -17,3 +17,10 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
+
+@font-face {
+  font-family: 'Bahnschrift Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Bahnschrift Regular'), url('../public/fonts/BAHNSCHRIFT.woff') format('woff');
+}

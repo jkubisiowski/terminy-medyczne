@@ -3,7 +3,7 @@ import "./footer.scss"
 
 const Footer = (props) => {
   return (
-    <div className="Footer">lol</div>
+    <div className="Footer">Copyright Terminymedyczne.pl</div>
   )
 }
 
