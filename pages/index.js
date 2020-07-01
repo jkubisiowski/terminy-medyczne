@@ -1,22 +1,22 @@
 import React from 'react'
-import Layout from '../components/Layout'
-import StartPage from "./StartPage";
+import HomePage from "../components/pages/HomePage";
 import client from "../client";
 import groq from "groq";
+import Layout from "../components/layout/Layout";
 
-const IndexPage = (props) => {
+const Index = (props) => {
   const {terms = []} = props;
 
   return (
     <Layout>
-      <StartPage terms={terms}/>
+      <HomePage terms={terms}/>
     </Layout>
   )
 
 }
 
-IndexPage.getInitialProps = async () => ({
+Index.getInitialProps = async () => ({
   terms: await client.fetch(groq`*[_type == "term"]`)
 })
 
-export default IndexPage
+export default Index
