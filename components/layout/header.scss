@@ -3,7 +3,7 @@
 .Header {
   display: grid;
   margin: 0 $body-margin;
-  padding: $spacing-small 0;
+  padding: $spacing-medium 0;
   grid-template-columns: [col1-start] 120px [col2-start] auto [col2-end];
   grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
 

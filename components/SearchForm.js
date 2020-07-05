@@ -7,8 +7,11 @@ const SearchForm = (props) => {
       <h1 className="SearchForm__title">Tłumaczymy trudne pojęcia medyczne na ludzki</h1>
       <input className="SearchForm__input" type="text" placeholder="Wpisz termin medyczny"/>
       <button className="SearchForm__buttonPrimary">Szukaj</button>
-      <p className="SearchForm__or">lub</p>
-      <button className="SearchForm__buttonSecondary">Szukaj</button>
+      <div className="SearchForm__otherTerms">
+        <div className="SearchForm__or">lub</div>
+        <button className="SearchForm__buttonSecondary">sprawdź najczęściej wyszukiwane hasła</button>
+      </div>
+
     </div>
   )
 }

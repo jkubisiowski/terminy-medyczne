@@ -1,3 +1,63 @@
+@import "styles/vars";
+
 .SearchForm {
+  display: grid;
+  grid-template-columns: [col1-start] auto [col2-start] 160px [col2-end];
+  grid-template-rows: [row1-start] 60px [row2-start] 60px [row3-start] 40px [row3-end];
+  row-gap: 40px;
+  column-gap: 20px;
+  padding-top: $spacing-extra-large;
+
+  &__title {
+    grid-column: col1-start / col2-end;
+    grid-row: row1-start;
+    font-weight: bolder;
+    font-size: $font-size-extra-large;
+    color: $color-grey;
+  }
+
+  &__input {
+    grid-column: col1-start;
+    grid-row: row2-start;
+    background-color: rgba(159, 197, 214, 0.3);
+    color: $color-light-grey;
+    font-size: $font-size-medium;
+    border: none;
+    text-indent: $spacing-medium;
+    border-radius: 2px;
+  }
+
+  &__buttonPrimary {
+    grid-column: col2-start;
+    grid-row: row2-start;
+    font-size: $font-size-large;
+    background-color: $color-secondary;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+
+  &__otherTerms {
+    grid-column: col1-start;
+    grid-row: row3-start;
+    display: flex;
+    align-items: center;
+  }
+
+  &__or {
+    margin-right: $spacing-small;
+    font-size: $font-size-medium;
+  }
+
+  &__buttonSecondary {
+    height: 40px;
+    background-color: $color-tertiary;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: $font-size-medium;
+    padding: 0 $spacing-medium;
+  }
+
 
 }
