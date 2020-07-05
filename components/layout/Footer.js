@@ -3,7 +3,9 @@ import "./footer.scss"
 
 const Footer = (props) => {
   return (
-    <div className="Footer">Copyright Terminymedyczne.pl</div>
+    <div className="Footer">
+      <p className="Footer__copyright">Copyright Terminymedyczne.pl</p>
+    </div>
   )
 }
 

@@ -3,6 +3,13 @@
 .Footer {
   height: 60px;
   background-color: $primary-color;
-  font-family: $font-stack;
-  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__copyright {
+    color: white;
+    font-family: $font-stack;
+    font-size: $font-size-medium;
+  }
 }
