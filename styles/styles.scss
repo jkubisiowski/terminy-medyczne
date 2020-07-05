@@ -1,3 +1,5 @@
+@import "vars";
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,4 +25,22 @@ time, mark, audio, video {
   font-style: normal;
   font-weight: normal;
   src: local('Bahnschrift Regular'), url('../public/fonts/BAHNSCHRIFT.woff') format('woff');
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+  margin: 0 200px;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: $footer-height;            /* Footer height */
 }

@@ -10,10 +10,12 @@ function Layout(props) {
         <meta name='viewport' content='initial-scale=1.0, width=device-width, viewport-fit=cover'/>
         <title>Terminy medyczne</title>
       </Head>
-      <div className="container">
+      <div id="page-container">
         <Header/>
-        {props.children}
-        <Footer/>
+        <div id="content-wrap">{props.children}</div>
+        <div id="footer">
+          <Footer/>
+        </div>
       </div>
     </>
   )
