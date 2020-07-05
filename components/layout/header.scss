@@ -1,31 +1,45 @@
 @import "styles/vars";
 
 .Header {
-  color: red;
   display: grid;
-  grid-template-columns: [col1-start] 100px  [col2-start] 100px  [col3-start] 100px [col3-end];
+  margin: 0 $body-margin;
+  padding: $spacing-small 0;
+  grid-template-columns: [col1-start] 120px [col2-start] auto [col2-end];
   grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
 
-
   &__logo {
-    height: 80px;
-    width: 80px;
-    grid-column: col3-start ;
+    grid-column: col1-start;
     grid-row: row1-start / row2-end;
+    height: 120px;
   }
 
   &__title {
-    grid-column: col1-start / col3-start;
-    grid-row: row1-start ;
+    grid-column: col2-start;
+    grid-row: row1-start;
+    align-self: end;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 44px;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 52px;
+    -webkit-text-fill-color: #219CD2;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #6F61A8;
+    text-transform: uppercase;
   }
 
   &__subtitle {
-    grid-column: col1-start;
-    grid-row: row2-start ;
+    grid-column: col2-start;
+    grid-row: row2-start;
+    align-self: start;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    color: $color-grey;
   }
 
-  &__next {
-    grid-column: col2-start ;
-    grid-row: row2-start ;
-  }
+
 }
