@@ -1,0 +1,36 @@
+@import "styles/vars";
+
+.Navigation {
+  height: $navigation-height;
+  background-color: $color-primary;
+  display: flex;
+  justify-content: space-between;
+
+  &__items {
+    list-style: none;
+    display: flex;
+    margin-left: $body-margin;
+    align-items: center;
+  }
+
+  &__item > a {
+    margin-right: $spacing-small;
+    font-size: 26px;
+    line-height: 30px;
+    color: white;
+    text-decoration: none;
+  }
+
+  &__socials {
+    list-style: none;
+    display: flex;
+    margin-right: $body-margin;
+    align-items: center;
+  }
+
+  &__social > a > img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+  }
+}

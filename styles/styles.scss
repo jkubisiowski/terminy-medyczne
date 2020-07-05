@@ -20,6 +20,10 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+body {
+  font-family: $font-stack;
+}
+
 @font-face {
   font-family: 'Bahnschrift Regular';
   font-style: normal;

@@ -17,7 +17,7 @@
     grid-column: col2-start;
     grid-row: row1-start;
     align-self: end;
-    font-family: Roboto, sans-serif;
+    font-family: $font-stack;
     font-weight: bold;
     font-size: 44px;
     font-style: normal;
@@ -33,7 +33,6 @@
     grid-column: col2-start;
     grid-row: row2-start;
     align-self: start;
-    font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
