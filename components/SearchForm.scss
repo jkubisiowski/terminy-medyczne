@@ -3,7 +3,7 @@
 .SearchForm {
   display: grid;
   grid-template-columns: [col1-start] auto [col2-start] 160px [col2-end];
-  grid-template-rows: [row1-start] 60px [row2-start] 60px [row3-start] 40px [row3-end];
+  grid-template-rows: [row1-start] 80px [row2-start] 56px [row3-start] 40px [row3-end];
   row-gap: 40px;
   column-gap: 20px;
   padding-top: $spacing-extra-large;
@@ -20,11 +20,11 @@
     grid-column: col1-start;
     grid-row: row2-start;
     background-color: rgba(159, 197, 214, 0.3);
-    color: $color-light-grey;
-    font-size: $font-size-medium;
-    border: none;
-    text-indent: $spacing-medium;
-    border-radius: 2px;
+    //color: $color-light-grey;
+    //font-size: $font-size-medium;
+    //border: none;
+    //text-indent: $spacing-medium;
+    //border-radius: 2px;
   }
 
   &__buttonPrimary {
