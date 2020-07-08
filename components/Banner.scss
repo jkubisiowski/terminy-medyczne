@@ -1,0 +1,13 @@
+@import "styles/vars.scss";
+
+.Banner {
+  margin-top: $spacing-extra-large;
+
+  &__text {
+
+  }
+
+  &__image {
+    width: 100%;
+  }
+}
