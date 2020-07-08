@@ -8,15 +8,21 @@ const SearchForm = (props) => {
 
   const onSubmit = event => {
     event.preventDefault();
-    navigateToTerm(value.name)
+    if(value!== null)
+      navigateToTerm(value.name)
   }
 
   const handleClick = () => {
-    navigateToTerm(value.name)
+    if(value!== null)
+      navigateToTerm(value.name)
   }
 
   const navigateToTerm = (selectedName) => {
-    console.log(selectedName)
+    const found = props.terms.find(x => x.name === selectedName);
+    if(found !== null){
+      console.log(found)
+      window.location.href = "/term/" + found.slug.current;
+    }
   }
 
   return (
@@ -41,7 +47,6 @@ const SearchForm = (props) => {
           }}
           className="SearchForm__input"
           freeSolo
-          id="free-solo-2-demo"
           disableClearable
           getOptionLabel={(option) => {
             // Value selected with enter, right from the input

@@ -21,10 +21,10 @@ const Navigation = (props) => {
       <ul className="Navigation__socials">
         <li className="Navigation__social">
           <a href="https://facebook.com" target="_blank">
-            <img src="images/facebook-white.svg" alt="facebook"/>
+            <img src="/images/facebook-white.svg" alt="facebook"/>
           </a>
           <a href="https://facebook.com" target="_blank">
-            <img src="images/instagram-white.svg" alt="facebook"/>
+            <img src="/images/instagram-white.svg" alt="facebook"/>
           </a>
         </li>
         <li className="Navigation__social">
