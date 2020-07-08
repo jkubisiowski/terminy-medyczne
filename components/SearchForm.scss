@@ -17,14 +17,9 @@
   }
 
   &__input {
-    grid-column: col1-start;
+    grid-column: col2-start;
     grid-row: row2-start;
     background-color: rgba(159, 197, 214, 0.3);
-    //color: $color-light-grey;
-    //font-size: $font-size-medium;
-    //border: none;
-    //text-indent: $spacing-medium;
-    //border-radius: 2px;
   }
 
   &__buttonPrimary {

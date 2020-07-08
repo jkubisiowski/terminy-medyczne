@@ -7,7 +7,7 @@ const HomePage = (props) => {
 
   return (
     <div>
-      <SearchForm/>
+      <SearchForm terms={props.terms}/>
       {/*{props.terms.map(*/}
       {/*  ({ _id, name = '', slug = '', _updatedAt = '' }) =>*/}
       {/*    slug && (*/}
