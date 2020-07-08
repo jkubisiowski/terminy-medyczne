@@ -1,10 +1,15 @@
 @import "styles/vars.scss";
 
 .Banner {
-  margin-top: $spacing-extra-large;
+  margin: $spacing-extra-large 0;
 
   &__text {
+    margin-bottom: $spacing-medium;
+    font-size: $font-size-large;
 
+    &-bold {
+      font-weight: 700;
+    }
   }
 
   &__image {
