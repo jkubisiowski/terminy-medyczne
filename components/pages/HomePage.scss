@@ -1,0 +1,30 @@
+@import "styles/vars";
+
+.HomePage {
+  &__title {
+    margin: $spacing-large 0;
+    font-weight: bolder;
+    font-size: $font-size-extra-large;
+    color: $color-secondary;
+  }
+
+  &__otherTerms {
+    display: flex;
+    align-items: center;
+  }
+
+  &__or {
+    margin-right: $spacing-small;
+    font-size: $font-size-medium;
+  }
+
+  &__buttonSecondary {
+    height: 40px;
+    background-color: $color-tertiary;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: $font-size-medium;
+    padding: 0 $spacing-medium;
+  }
+}
