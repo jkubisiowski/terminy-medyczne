@@ -1,26 +1,18 @@
 import React from 'react'
-import client from "../../client";
-import imageUrlBuilder from "@sanity/image-url";
 import TermCard from "../TermCard";
 import AuthorCard from "../AuthorCard";
-
-function urlFor(source) {
-  return imageUrlBuilder(client).image(source)
-}
+import SearchForm from "../SearchForm";
+import FrequentTerms from "../FrequentTerms";
 
 const TermPage = (props) => {
-  const {
-    name = 'Missing name',
-    authorName = 'Missing author name',
-    categories,
-    authorImage,
-    body = []
-  } = props
+
 
   return (
     <>
-      <TermCard categories={categories} name={name} body={body}/>
-      <AuthorCard authorName={authorName} authorImage={authorImage}/>
+      <TermCard categories={props.term.categories} name={props.term.name} body={props.term.body}/>
+      <AuthorCard authorName={props.term.authorName} authorImage={props.term.authorImage}/>
+      <SearchForm terms={props.terms}/>
+      <FrequentTerms/>
     </>
   )
 }

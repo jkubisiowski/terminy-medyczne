@@ -24,7 +24,17 @@ TermPageWrapper.getInitialProps = async function (context) {
   // It's important to default the slug so that it doesn't return "undefined"
   const {slug = ""} = context.query
 
-  return await client.fetch(query, {slug});
+  console.log("dupa")
+
+  const terms = await client.fetch(groq`*[_type == "term"]`)
+  const term = await client.fetch(query, {slug});
+
+  console.log(terms)
+
+  return {
+    terms: terms,
+    term: term
+  }
 }
 
 export default TermPageWrapper
