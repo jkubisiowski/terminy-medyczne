@@ -4,7 +4,9 @@ import "./FrequentTerms.scss"
 const FrequentTerms = (props) => {
   return (
     <div className="FrequentTerms">
-      lol
+      {props.terms.map(x => <div className="FrequentTerms__itemContainer">
+        <a className="FrequentTerms__item" href={x.url}>{x.name}</a>
+      </div>)}
     </div>
   )
 }

@@ -1,3 +1,21 @@
+@import "styles/vars";
+
 .FrequentTerms {
-  color: green;
+
+
+  &__itemContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 40px;
+    background-color: $color-light-blue;
+    margin: $spacing-medium;
+    border-radius: 5px;
+  }
+
+  &__item {
+    text-decoration: none;
+    color: black;
+  }
 }
