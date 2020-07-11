@@ -31,7 +31,7 @@ function Layout(props) {
                     <a href="#">Sign In</a>
                   </div>
                   <div className="btn-2">
-                    <a href="#">Get Started</a>
+                    <a href="#">Znajdź termin</a>
                   </div>
                 </div>
               </div>
@@ -144,7 +144,7 @@ function Layout(props) {
             <div className="row justify-content-center">
               <div className="col-xl-5  col-sm-6 col-10">
                 <div className="content-img">
-                  <img src="/image/content-image-1.png" alt=""/>
+                  <img src="/image/Konrad.png" alt=""/>
                 </div>
               </div>
 
@@ -179,7 +179,7 @@ function Layout(props) {
             <div className="row justify-content-center">
               <div className="col-xl-5 offset-xl-1 col-sm-6 col-10 order-sm-2">
                 <div className="content-img">
-                  <img src="/image/content-image-2.png" alt=""/>
+                  <img src="/image/Gosia.png" alt=""/>
                 </div>
               </div>
               <div className="col-xl-5  col-sm-6 order-sm-1">
