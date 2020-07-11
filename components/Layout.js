@@ -150,14 +150,25 @@ function Layout(props) {
 
               <div className="col-xl-5 offset-xl-1 col-sm-6">
                 <div className="content-right-content">
-                  <h2>Response on a chat wherever you are</h2>
+                  <h2>Konrad Janik</h2>
                   <p>
-                    Create custom landing pages with Shades that convert more visitors than any website, no coding
-                    required.
+                    Lekarz w trakcie specjalizacji z radiologii i diagnostyki obrazowej. Studiował w Collegium Medicum Uniwersytetu Jagiellońskiego w Krakowie oraz Julius-Maximilians-Universität w Würzburgu.
                   </p>
-                  <div className="content-link">
-                    <a href="">Learn more <i className="icon icon-minimal-right"></i></a>
-                  </div>
+                  <ul className="content-list">
+                    <li>
+                      <span><i className="icon icon-check-2"></i></span>Staż podyplomowy w Szpitalu Uniwersyteckim w Krakowie. 
+
+                    </li>
+                    <li>
+                      <span><i className="icon icon-check-2"></i></span>Kierownik działu medycznego firmy farmaceutycznej produkującej sczepionki
+                    </li>
+                    <li>
+                      <span><i className="icon icon-check-2"></i></span>Tłumacz medyczny z języka angielskiego i niemieckiego
+                    </li>
+                  </ul>
+                  <p>
+                  Interesują go zastosowania sztucznej inteligencji w medycynie, potencjał mikrobiomu oraz futurologia medyczna.
+                  </p>
                 </div>
               </div>
             </div>
@@ -173,25 +184,24 @@ function Layout(props) {
               </div>
               <div className="col-xl-5  col-sm-6 order-sm-1">
                 <div className="content-left-content">
-                  <h2>Never miss a thing</h2>
+                  <h2>Małgorzata Łukaszewicz</h2>
                   <p>
-                    Event is not like most tech conferences. We want our presentations to engage the audience, spark
-                    discussion and inspire new ideas.
+                  Lekarz, obecnie w trakcie stażu podyplomowego. Ukończyła I Wydział Lekarski Warszawskiego Uniwersytetu Medycznego.
                   </p>
                   <ul className="content-list">
                     <li>
-                      <span><i className="icon icon-check-2"></i></span>Unlimited design
-                      possibility
+                      <span><i className="icon icon-check-2"></i></span>Przewodnicząca Studenckiego Koła Informatyki Medycznej i Telemedycyny w latach 2017-2019
                     </li>
                     <li>
-                      <span><i className="icon icon-check-2"></i></span>Completely
-                      responsive
+                      <span><i className="icon icon-check-2"></i></span>Wolontariusz w Zakładzie Informatyki Medycznej i Telemedycyny Warszawskiego Uniwersytetu Medycznego
                     </li>
                     <li>
-                      <span><i className="icon icon-check-2"></i></span>Easy to
-                      customize
+                      <span><i className="icon icon-check-2"></i></span>Od 2016 r. zajmuje się Digital Marketingiem w branży farmaceutycznej oraz wyrobów medycznych.
                     </li>
                   </ul>
+                  <p>
+                  Wierzy, że innowacje pomogą poprawić komfort i skuteczność leczenia, dlatego chce je wykorzystywać w pracy lekarza.
+                  </p>
                 </div>
               </div>
             </div>
@@ -206,23 +216,24 @@ function Layout(props) {
             <div className="row justify-content-center">
               <div className="col-xl-5 col-lg-6 col-md-5 col-sm-6 col-10">
                 <div className="content-img">
-                  <img src="/image/content-image-3.png" alt=""/>
+                  <img src="/image/doctor.png" alt=""/>
                 </div>
               </div>
               <div className="col-xl-5  offset-xl-1 col-lg-6 col-md-7 col-sm-6 ">
                 <div className="content-left-content">
-                  <h2>Increase Customer Support Productivity</h2>
+                  <h2>Naszą misją jest usprawnienie komunikacji na linii lekarz-pacjent</h2>
                   <p>
-                    Event is not like most tech conferences. We want our presentations to engage the audience, spark
-                    discussion and inspire new ideas.
+                  <b>Jesteś pacjentem?</b> Masz dostęp do rzetelnych, sprawdzonych informacji by lepiej zrozumieć skomplikowane rezultaty badań, wyniki konsultacji i wyisy ze szpitala.
                   </p>
-                  <div className="content-bottom-part">
-                    <p>Interested to see how it works? Schedule a free demo to get to learn everything you need to
-                      know.</p>
+                  <p>
+                  <b>Jesteś lekarzem?</b> Masz pod ręką wygodne narzędzie, które pomaga sprawnie wytłumaczyć pacjentowi zaawiłe pojęcia.
+                  </p>
+                  {/* <div className="content-bottom-part">
+                    <p></p>
                     <div className="content-btn">
                       <a href="#" className="btn btn--primary">Schedule A Demo</a>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

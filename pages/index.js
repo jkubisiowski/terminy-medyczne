@@ -20,7 +20,7 @@ const Index = (props) => {
             <div className="col-lg-6 order-lg-1">
               <div className="hero-content">
                 <h1>Sprawdź, co lekarz miał na myśli</h1>
-                <p>Terminymedyczne.pl tłumaczą niezrozumiałe i skomplikowane pojęcia medyczne na język codzienny.
+                <p>Tutaj zawodowi lekarze tłumaczą terminy medyczne na zrozumiały język. Tak po prostu.
                 </p>
                 <div className="hero-form">
                   <SearchForm terms={terms}></SearchForm>
