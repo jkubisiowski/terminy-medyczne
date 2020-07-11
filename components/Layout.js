@@ -27,9 +27,9 @@ function Layout(props) {
               </div>
               <div className="col-sm-8 col-lg-3 col-xl-3 d-none d-sm-block order-lg-3">
                 <div className="header-btns">
-                  <div className="btn-1">
+                  {/* <div className="btn-1">
                     <a href="#">Sign In</a>
-                  </div>
+                  </div> */}
                   <div className="btn-2">
                     <a href="#">Znajdź termin</a>
                   </div>
@@ -38,7 +38,7 @@ function Layout(props) {
               <div className="col-sm-1 col-6 col-lg-7 col-xl-6 offset-xl-1 position-static order-lg-2">
                 <div className="main-navigation">
                   <ul className="main-menu">
-                    <li className="menu-item has-dropdown">
+                    {/* <li className="menu-item has-dropdown">
                       <a href="#features">Free Landing Pages</a>
                       <ul className="menu-dropdown">
                         <li className="single-item">
@@ -66,14 +66,14 @@ function Layout(props) {
                           </a>
                         </li>
                       </ul>
-                    </li>
-                    <li className="menu-item "><a href="#features">Features</a></li>
+                    </li> */}
+                    <li className="menu-item "><a href="#about-us">O nas</a></li>
 
-                    <li className="menu-item"><a href="#">Services</a></li>
+                    <li className="menu-item"><a href="#about-project">O projekcie</a></li>
 
-                    <li className="menu-item"><a href="#pricing">Pricing</a></li>
+                    <li className="menu-item"><a href="#pricing">Kontakt</a></li>
 
-                    <li className="menu-item"><a href="#contact">Contact</a></li>
+                    <li className="menu-item"><a href="#contact">Blog</a></li>
                   </ul>
                 </div>
                 <div className="mobile-menu"></div>
@@ -89,7 +89,7 @@ function Layout(props) {
           </div>
           <div className="container">
             <div className="section-title text-center">
-              <h2>Mark your next step</h2>
+              <h2>Najczęściej wyszukiwane hasła</h2>
             </div>
             <div className="row mb-d-30">
               <div className="col-md-6 col-lg-4 mb--30">
@@ -139,7 +139,7 @@ function Layout(props) {
 
         </section>
 
-        <section className="content-section-01">
+        <section id="about-us" className="content-section-01">
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-xl-5  col-sm-6 col-10">
@@ -208,7 +208,7 @@ function Layout(props) {
           </div>
 
         </section>
-        <section className="content-section-03">
+        <section id="about-project" className="content-section-03">
           <div className="shape">
             <img src="/image/landing-4.svg" alt=""/>
           </div>
@@ -241,8 +241,33 @@ function Layout(props) {
 
         </section>
 
-
         <section className="pricing-section">
+          <div className="shape">
+            <img src="/image/landing-2-shape.svg" alt=""/>
+          </div>
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-xl-5 offset-xl-1 col-sm-6 col-10 order-sm-2">
+                <div className="content-img">
+                  <img src="/image/kontakt.png" alt=""/>
+                </div>
+              </div>
+              <div className="col-xl-5  col-sm-6 order-sm-1">
+                <div className="content-left-content">
+                  <h2>Masz pytania?</h2>
+                  <p>
+                  Chętnie na nie odpowiemy!
+                  </p>
+                  <p>
+                  Napisz do nas: 
+                  <a href="mailto:kontakt@terminymedyczne.pl">kontakt@terminymedyczne.pl</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>          
+        {/* <section className="pricing-section">
           <div className="shape">
             <img src="/image/landing-2-shape.svg" alt=""/>
           </div>
@@ -373,7 +398,7 @@ function Layout(props) {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <div className="footer-section">
           <div className="container">
@@ -381,20 +406,19 @@ function Layout(props) {
               <div className="row justify-content-center">
                 <div className="col-lg-10 col-xl-8">
                   <div className="footer-newsletter-content">
-                    <h2>Join our rich newsletter now</h2>
-                    <p>We designed and tested prototypes that helped identify pain points in the account creation
-                      process. Together, we shaped the new standard.</p>
+                    <h2>Zapisz się do newslettera</h2>
+                    <p>Dołącz do naszej listy mailingowej i bądź na bieżąco z najnowszymi ciekawostkami ze świata medycznego</p>
                   </div>
                 </div>
                 <div className="col-lg-7 col-xl-6">
                   <div className="footer-newsletter-form">
                     <form action="">
                       <div className="form-group">
-                        <input type="text" className="form-control" placeholder="Enter your email address"/>
-                          <button className="submit-btn">Subscribe</button>
+                        <input type="text" className="form-control" placeholder="Wpisz adres email"/>
+                          <button className="submit-btn">Zapisz się</button>
                       </div>
-                      <p className="form-text"><i className="icon icon-lock"></i>Your data is protected. We never spam
-                        in your inbox</p>
+                      {/* <p className="form-text"><i className="icon icon-lock"></i>Your data is protected. We never spam
+                        in your inbox</p> */}
                     </form>
                   </div>
                 </div>
@@ -418,13 +442,8 @@ function Layout(props) {
                       </a>
                     </li>
                     <li>
-                      <a href="">
-                        <i className="icon icon-logo-twitter"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <i className="icon icon-google"></i>
+                      <a href="https://instagram.com/terminymedyczne/" target="_blank">
+                        <i className="icon icon-logo-instagram"></i>
                       </a>
                     </li>
                   </ul>
