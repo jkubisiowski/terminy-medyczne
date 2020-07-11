@@ -31,7 +31,7 @@ function Layout(props) {
                     <a href="#">Sign In</a>
                   </div> */}
                   <div className="btn-2">
-                    <a href="#">Znajdź termin</a>
+                    <a href="#">Szukaj</a>
                   </div>
                 </div>
               </div>
@@ -71,9 +71,9 @@ function Layout(props) {
 
                     <li className="menu-item"><a href="#about-project">O projekcie</a></li>
 
-                    <li className="menu-item"><a href="#pricing">Kontakt</a></li>
+                    <li className="menu-item"><a href="#contact">Kontakt</a></li>
 
-                    <li className="menu-item"><a href="#contact">Blog</a></li>
+                    <li className="menu-item"><a href="#">Blog</a></li>
                   </ul>
                 </div>
                 <div className="mobile-menu"></div>
@@ -241,7 +241,7 @@ function Layout(props) {
 
         </section>
 
-        <section className="pricing-section">
+        <section id="contact" className="pricing-section">
           <div className="shape">
             <img src="/image/landing-2-shape.svg" alt=""/>
           </div>
@@ -259,9 +259,21 @@ function Layout(props) {
                   Chętnie na nie odpowiemy!
                   </p>
                   <p>
-                  Napisz do nas: 
+                  Napisz do nas:
                   <a href="mailto:kontakt@terminymedyczne.pl">kontakt@terminymedyczne.pl</a>
                   </p>
+                  <ul className="footer-social-list">
+                    <li>
+                      <a href="" target="_blank">
+                        <i className="icon icon-logo-fb-simple"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://instagram.com/terminymedyczne/" target="_blank">
+                        <i className="icon icon-logo-instagram"></i>
+                      </a>
+                    </li>
+                   </ul> 
                 </div>
               </div>
             </div>
@@ -428,13 +440,13 @@ function Layout(props) {
             <div className="row margin-decrese">
               <div className="col-xl-4 col-lg-5 col-margin">
                 <div className="single-footer">
-                  <div className="footer-title">
+                  {/* <div className="footer-title">
                     <img src="/image/footer-logo.png" alt=""/>
                   </div>
                   <div className="footer-text">
                     <p>Big, small, online, offline, local. Size doesn't matter. We work on diverse projects for top
                       brands as well as for cool startups. </p>
-                  </div>
+                  </div> */}
                   <ul className="footer-social-list">
                     <li>
                       <a href="">
@@ -446,10 +458,11 @@ function Layout(props) {
                         <i className="icon icon-logo-instagram"></i>
                       </a>
                     </li>
+                    <li><a href="https://iconscout.com/illustrations/doctor" target="_blank">Doctor Illustration</a> by <a href="https://iconscout.com/contributors/manypixels-gallery" target="_blank">Manypixels Gallery</a></li>
                   </ul>
                 </div>
               </div>
-              <div className="col-lg-2 col-sm-4 col-6 offset-lg-1 col-margin">
+              {/* <div className="col-lg-2 col-sm-4 col-6 offset-lg-1 col-margin">
                 <div className="single-footer">
                   <div className="footer-title">
                     <h6>Help Menu</h6>
@@ -487,7 +500,7 @@ function Layout(props) {
                     <li><a href="">vApp Landing Page</a></li>
                   </ul>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
