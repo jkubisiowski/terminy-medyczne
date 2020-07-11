@@ -6,11 +6,15 @@ import BlockContent from "@sanity/block-content-to-react";
 const TermCard = (props) => {
   return (
     <div className="TermCard">
-      {props.categories && (
-        <ul>
-          {props.categories.map(category => <li key={category}>{category}</li>)}
-        </ul>
-      )}
+      <div className="TermCard__category">
+        {props.categories && (
+          <ul>
+            {props.categories.map(category => <li key={category}>{category}</li>)}
+          </ul>
+        )}
+      </div>
+
+
       <h2>{props.name}</h2>
       <BlockContent
         blocks={props.body}

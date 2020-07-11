@@ -2,6 +2,10 @@
 
 .FrequentTerms {
 
+  &__title {
+    font-size: $font-size-large;
+    color: $color-secondary;
+  }
 
   &__itemContainer {
     display: flex;

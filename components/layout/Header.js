@@ -5,7 +5,7 @@ function Header(props) {
   return (
     <div className="Header">
       <a className="Header__title" href="/">Terminy medyczne.pl</a>
-      <img className="Header__logo" alt="logo" src="/images/logo.png"/>
+      <img className="Header__logo" alt="logo" src="/images/logo kon2.svg"/>
       <h2 className="Header__subtitle">Sprawdź, co lekarz miał na myśli</h2>
     </div>
 
