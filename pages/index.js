@@ -9,7 +9,7 @@ const Index = (props) => {
 
   return (
     <Layout>
-      <HomePage terms={terms}/>
+      <h1>LOLLO</h1>
     </Layout>
   )
 
