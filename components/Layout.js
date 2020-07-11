@@ -160,7 +160,7 @@ function Layout(props) {
 
                     </li>
                     <li>
-                      <span><i className="icon icon-check-2"></i></span>Kierownik działu medycznego firmy farmaceutycznej produkującej sczepionki
+                      <span><i className="icon icon-check-2"></i></span>Kierownik działu medycznego firmy farmaceutycznej produkującej szczepionki
                     </li>
                     <li>
                       <span><i className="icon icon-check-2"></i></span>Tłumacz medyczny z języka angielskiego i niemieckiego
