@@ -24,13 +24,6 @@ const Index = (props) => {
                   required.
                 </p>
                 <div className="hero-form">
-                  {/*<form action="">*/}
-                  {/*  <div className="form-group">*/}
-                  {/*    <input type="text" className="form-control" placeholder="Enter your email address"/>*/}
-                  {/*    <button className="submit-btn">Get Started</button>*/}
-                  {/*  </div>*/}
-                  {/*  <p className="form-text">Already using Shade? <a href="" className="link">Sign In</a></p>*/}
-                  {/*</form>*/}
                   <SearchForm terms={terms}></SearchForm>
                 </div>
               </div>

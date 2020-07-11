@@ -54,8 +54,6 @@ TermPage.getInitialProps = async function (context) {
   const terms = await client.fetch(groq`*[_type == "term"]`)
   const term = await client.fetch(query, {slug});
 
-  console.log(terms)
-
   return {
     terms: terms,
     term: term

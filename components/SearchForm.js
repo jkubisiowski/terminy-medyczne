@@ -63,7 +63,7 @@ const SearchForm = (props) => {
             />
           )}
         />
-        <button type="submit" className="">Szukaj</button>
+        <button type="submit" className="search-form-submit">Szukaj</button>
       </div>
 
     </form>
