@@ -1,18 +1,15 @@
-@import "styles/vars";
-
 .SearchForm {
   display: flex;
-  margin: $spacing-medium 0;
+  margin: 40px 0;
 
   &__input {
     width: 100%;
   }
 
   &__button {
-    margin-left: $spacing-medium;
+    margin-left: 40px;
     width: 140px;
-    font-size: $font-size-large;
-    background-color: $color-secondary;
+    font-size: 40px;
     color: white;
     border: none;
     border-radius: 5px;

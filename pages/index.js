@@ -1,8 +1,7 @@
 import React from 'react'
-import HomePage from "../components/pages/HomePage";
 import client from "../client";
 import groq from "groq";
-import Layout from "../components/layout/Layout";
+import Layout from "../components/Layout";
 
 const Index = (props) => {
   const {terms = []} = props;

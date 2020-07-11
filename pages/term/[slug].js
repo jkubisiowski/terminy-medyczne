@@ -1,7 +1,7 @@
 import groq from 'groq'
 import client from '../../client'
 import React from "react";
-import Layout from "../../components/layout/Layout";
+import Layout from "../../components/Layout";
 import TermPage from "../../components/pages/TermPage";
 
 const TermPageWrapper = (props) => {
@@ -23,8 +23,6 @@ const query = groq`*[_type == "term" && slug.current == $slug][0]{
 TermPageWrapper.getInitialProps = async function (context) {
   // It's important to default the slug so that it doesn't return "undefined"
   const {slug = ""} = context.query
-
-  console.log("dupa")
 
   const terms = await client.fetch(groq`*[_type == "term"]`)
   const term = await client.fetch(query, {slug});
