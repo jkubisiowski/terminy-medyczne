@@ -24,12 +24,12 @@ body {
   font-family: $font-stack;
 }
 
-@font-face {
-  font-family: 'Bahnschrift Regular';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Bahnschrift Regular'), url('../public/fonts/BAHNSCHRIFT.woff') format('woff');
-}
+//@font-face {
+//  font-family: 'Bahnschrift Regular';
+//  font-style: normal;
+//  font-weight: normal;
+//  src: local('Bahnschrift Regular'), url('../public/fonts/BAHNSCHRIFT.woff') format('woff');
+//}
 
 #page-container {
   position: relative;
