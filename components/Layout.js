@@ -95,7 +95,7 @@ function Layout(props) {
               <div className="col-md-6 col-lg-4 mb--30">
                 <div className="feature-card">
                   <div className="card-icon">
-                  <i class="fas fa-stethoscope"></i>
+                  <i className="fas fa-stethoscope"></i>
                   </div>
                   <div className="card-content">
                     <h3>ZUM</h3>
@@ -108,7 +108,7 @@ function Layout(props) {
               <div className="col-md-6 col-lg-4 mb--30">
                 <div className="feature-card">
                   <div className="card-icon">
-                  <i class="fas fa-syringe"></i>
+                  <i className="fas fa-syringe"></i>
                   </div>
                   <div className="card-content">
                     <h3>Insulinooporność</h3>
@@ -121,7 +121,7 @@ function Layout(props) {
               <div className="col-md-6 col-lg-4 mb--30">
                 <div className="feature-card">
                   <div className="card-icon">
-                  <i class="fas fa-heartbeat"></i>
+                  <i className="fas fa-heartbeat"></i>
                   </div>
                   <div className="card-content">
                     <h3>Torbiel</h3>
