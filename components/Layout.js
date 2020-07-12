@@ -95,13 +95,12 @@ function Layout(props) {
               <div className="col-md-6 col-lg-4 mb--30">
                 <div className="feature-card">
                   <div className="card-icon">
-                    <i className="icon icon-users-mm"></i>
+                  <i class="fas fa-stethoscope"></i>
                   </div>
                   <div className="card-content">
-                    <h3>Targeted Marketing</h3>
-                    <p>Whether it’s a small internal app or a new for millions of customers, our design and
-                      development teams.</p>
-                    <a href="" className="btn btn-link right-icon">Learn more <i
+                    <h3>ZUM</h3>
+                    <p>Zakażenie układu moczowego, proces zapalny może znajdować się w układzie moczowym czyli w nerkach, moczowodach, pęcherzu moczowym lub cewce moczowej</p>
+                    <a href="" className="btn btn-link right-icon">Czytaj dalej <i
                       className="icon icon-minimal-right"></i></a>
                   </div>
                 </div>
@@ -109,13 +108,12 @@ function Layout(props) {
               <div className="col-md-6 col-lg-4 mb--30">
                 <div className="feature-card">
                   <div className="card-icon">
-                    <i className="icon icon-send"></i>
+                  <i class="fas fa-syringe"></i>
                   </div>
                   <div className="card-content">
-                    <h3>Easy Communicaton</h3>
-                    <p>Whether it’s a small internal app or a new for millions of customers, our design and
-                      development teams.</p>
-                    <a href="" className="btn btn-link right-icon">Learn more <i
+                    <h3>Insulinooporność</h3>
+                    <p>Stan, w którym tkanki organizmu są za mało wrażliwe na insulinę, co skutkuje nadmiernym wydzielaniem insuliny by osiągnąć odpowiedni efekt.</p>
+                    <a href="" className="btn btn-link right-icon">Czytaj dalej <i
                       className="icon icon-minimal-right"></i></a>
                   </div>
                 </div>
@@ -123,13 +121,12 @@ function Layout(props) {
               <div className="col-md-6 col-lg-4 mb--30">
                 <div className="feature-card">
                   <div className="card-icon">
-                    <i className="icon icon-settings"></i>
+                  <i class="fas fa-heartbeat"></i>
                   </div>
                   <div className="card-content">
-                    <h3>Fastest Setup</h3>
-                    <p>Whether it’s a small internal app or a new for millions of customers, our design and
-                      development teams.</p>
-                    <a href="" className="btn btn-link right-icon">Learn more <i
+                    <h3>Torbiel</h3>
+                    <p>Nieprawidłowa przestrzeń w tkance wypełniona płynem. Torbiele mogą wystepować w różnych tkankach np. w jajniku, nerkach, tkance podskórnej.</p>
+                    <a href="" className="btn btn-link right-icon">Czytaj dalej <i
                       className="icon icon-minimal-right"></i></a>
                   </div>
                 </div>
