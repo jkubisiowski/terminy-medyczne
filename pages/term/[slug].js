@@ -1,6 +1,5 @@
 import groq from 'groq'
 import client from '../../client'
-import React from "react";
 import Layout from "../../components/Layout";
 // import "./TermPage.scss"
 import imageUrlBuilder from '@sanity/image-url'

@@ -1,4 +1,3 @@
-import React from 'react'
 import client from "../client";
 import groq from "groq";
 import Layout from "../components/Layout";
