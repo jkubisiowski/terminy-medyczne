@@ -98,7 +98,7 @@ function Layout(props) {
                   </div>
                   <div className="card-content">
                     <h3>ZUM</h3>
-                    <p>Zakażenie układu moczowego, proces zapalny może znajdować się w układzie moczowym czyli w nerkach, moczowodach, pęcherzu moczowym lub cewce moczowej</p>
+                    <p>Zakażenie układu moczowego, proces zapalny może znajdować się w układzie moczowym czyli w nerkach, pęcherzu lub cewce moczowej</p>
                     <a href="" className="btn btn-link right-icon">Czytaj dalej <i
                       className="icon icon-minimal-right"></i></a>
                   </div>
