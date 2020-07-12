@@ -13,14 +13,14 @@ const TermPage = (props) => {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-4 order-2">
-              <div className="term-author">
-                <p>Termin medyczyny przetłumaczył</p>
-                <h5>{props.authorName}</h5>
+              <div>
+                <p className="term-author-label">Autor tłumaczenia</p>
+                <h5 className="term-author-name">{props.authorName}</h5>
                 {props.authorImage && (
                   <div>
                     <img
                       src={urlFor(props.authorImage)
-                        .width(50)
+                        .width(200)
                         .url()}
                       alt={props.authorImage}/>
                   </div>
