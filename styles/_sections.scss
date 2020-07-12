@@ -1,4 +1,4 @@
-/* /////////////////////////// 
+/* ///////////////////////////
     Header Area
 //////////////////////////// */
 .site-header{
@@ -117,13 +117,13 @@
   }
   .btn-1 {
     color: #666666;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: -1px;
     margin: 0 14px;
     @include large-desktops {
-      margin: 0 17px; 
+      margin: 0 17px;
     }
   }
   .btn-2 {
@@ -139,7 +139,7 @@
     }
     a {
       color: #ffffff;
-      font-family: 'Karla', sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-size: 16px;
       font-weight: 400;
       letter-spacing: -1px;
@@ -148,7 +148,7 @@
 }
 
 
-/*  Mobile Menu / Mean Menu Reset  */ 
+/*  Mobile Menu / Mean Menu Reset  */
 
  .mobile-menu.mean-container{
    .mean-bar{
@@ -213,7 +213,7 @@
          border-radius: 8px;
        }
        .menu-item{
-         
+
          > a{
            border-bottom:0;
            font-size: 15px;
@@ -230,14 +230,14 @@
            border-top:1px solid #e5e5e5;
            border-bottom:1px solid transparent;
          }
-         
+
          @include tablet{
            padding-left: 40px;
          }
          p{
            margin-bottom: 0;
          }
-         
+
        }
        ul li {
          float: none;
@@ -254,7 +254,7 @@
 
 
 
-/* /////////////////////////// 
+/* ///////////////////////////
     Hero Area
 //////////////////////////// */
 .shapes{
@@ -269,7 +269,7 @@
       padding: 115px 0 110px;
     }
 }
-  
+
   .hero-content{
     text-align: left;
     h1 {
@@ -311,7 +311,7 @@
     font-weight: 400;
     letter-spacing: -0.4px;
     line-height: 36px;
-      
+
     }
   }
   .hero-form {
@@ -368,7 +368,7 @@
         }
       }
     }
-  
+
     .form-text{
         font-size: 17px;
         font-weight: 400;
@@ -396,8 +396,8 @@
   }
 
 
-  
-/* /////////////////////////// 
+
+/* ///////////////////////////
     Feature Section
 //////////////////////////// */
 
@@ -477,7 +477,7 @@
             height: 80px;
             font-size: 35px;
         }
-    }   
+    }
     .card-content{
         h3{
             color: #1f1f1f;
@@ -506,7 +506,7 @@
             @include large-desktops{
                 font-size: 17px;
             }
-            
+
         }
         .btn-link {
             min-width: 0;
@@ -538,7 +538,7 @@
 /* ///////////////////////////
     Content Sections
 //////////////////////////// */
- 
+
 .content-section-01 {
     background-color: #f8f8f8;
     padding: 60px 0 0px;
@@ -553,7 +553,7 @@
     @include desktops {
       padding: 80px 0 120px;
     }
-    
+
 }
 
   .content-section-03 {
@@ -582,12 +582,12 @@
       padding-bottom: 0;
     }
   }
-   
-   
+
+
   .content-right-content,.content-left-content {
       padding-top: 30px;
       text-align: left;
-      
+
       @include mobile-lg {
         padding-top: 0px;
       }
@@ -669,7 +669,7 @@
             letter-spacing: -1.06px;
         }
       }
-   
+
   }
   .content-left-content{
       padding-top: 0;;
@@ -704,7 +704,7 @@
               margin-left: 15px;
           }
           &:hover {
-             
+
               i{
                   color: $primary-color;
                   margin-left: 20px;
@@ -712,7 +712,7 @@
           }
       }
   }
-   
+
   // Content-List
 // Content-List
 .content-list {
@@ -757,9 +757,9 @@
     }
   }
 
-   
+
 /* ///////////////////////////
-    Pricing Section 
+    Pricing Section
 //////////////////////////// */
 .pricing-section {
     padding-top: 45px;
@@ -776,7 +776,7 @@
     .section-title {
         padding-bottom: 0px;
         h2 {
-            
+
             color: #fff;
         }
         p{
@@ -804,7 +804,7 @@
         padding-bottom: 18px;
         h6 {
             color: #666666;
-            font-family: 'Karla', sans-serif;
+            font-family: 'Roboto', sans-serif;
             font-size: 13px;
             font-weight: 700;
             letter-spacing: 0.43px;
@@ -815,14 +815,14 @@
         h2 {
             .small-title {
                 color: #1f1f1f;
-                font-family: 'Karla', sans-serif;
+                font-family: 'Roboto', sans-serif;
                 font-size: 30px;
                 font-weight: 700;
                 letter-spacing: -1.2px;
             }
             .big-txt {
                 color: #1f1f1f;
-                font-family: 'Karla', sans-serif;
+                font-family: 'Roboto', sans-serif;
                 font-size: 50px;
                 font-weight: 700;
                 letter-spacing: -2px;
@@ -833,7 +833,7 @@
             }
             .month {
                 color: #1f1f1f;
-                font-family: 'Karla', sans-serif;
+                font-family: 'Roboto', sans-serif;
                 font-size: 17px;
                 font-weight: 700;
                 letter-spacing: -0.68px;
@@ -854,7 +854,7 @@
       .pricing-list{
         li {
             color: #1f1f1f;
-            font-family: 'Karla', sans-serif;
+            font-family: 'Roboto', sans-serif;
             font-size: 17px;
             font-weight: 400;
             letter-spacing: -0.42px;
@@ -958,15 +958,15 @@
     p  {
         display: flex;
         justify-content: center;
-        font-family: 'Karla', sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-size: 15px;
         font-weight: 400;
         letter-spacing: -0.32px;
         @include mobile {
-            font-size: 16px;            
+            font-size: 16px;
         }
         @include tablet {
-            font-size: 17px;            
+            font-size: 17px;
         }
     }
     span{
@@ -1004,7 +1004,7 @@
   color: #4eab08;
   background-color: rgba(78, 171, 8, 0.14);
   padding: 0 15px;
-  border-radius: 5px; 
+  border-radius: 5px;
   }
   .badge--discount {
       height: 26px;
@@ -1023,13 +1023,13 @@
   height: 25px;
   margin-bottom: 0;
   }
-  
-  .switch input { 
+
+  .switch input {
   opacity: 0;
   width: 0;
   height: 0;
   }
-  
+
   .slider {
   position: absolute;
   cursor: pointer;
@@ -1042,7 +1042,7 @@
   border: 1px solid #e5e5e5;
   transition: .4s;
   }
-  
+
   .slider:before {
   position: absolute;
   content: "";
@@ -1054,28 +1054,28 @@
   background-color: $primary-color;
   transition: .4s;
   }
-  
+
   input:checked + .slider {
   background-color: #fff;
   border: 1px solid #e5e5e5;
   }
-  
+
   input:focus + .slider {
   box-shadow: 0 0 1px #fff;
   }
-  
+
   input:checked + .slider:before {
   transform: translateX(21px) translateY(-50%);
   background-color: $primary-color;
 
 
   }
-  
+
   // Rounded sliders /
   .slider.round {
   border-radius: 34px;
   }
-  
+
   .slider.round:before {
   border-radius: 50%;
   }
@@ -1106,9 +1106,9 @@
       }
   }
 }
- 
 
-  /* /////////////////////////// 
+
+  /* ///////////////////////////
     Footer Section - 06
 //////////////////////////// */
 
@@ -1121,9 +1121,9 @@
       margin-bottom: 30px;
     }
   }
-  
-  
-  
+
+
+
   .footer-newsletter-section{
     border-bottom:1px solid #e5e5e5;
     padding-bottom: 52px;
@@ -1132,10 +1132,10 @@
       padding-bottom: 120px;
       margin-bottom: 100px;
     }
-    
+
   }
 
-   
+
   .footer-newsletter-content{
     text-align: center;
     span {
@@ -1214,8 +1214,8 @@
           }
         }
       }
-    
-  
+
+
     .form-text{
       color: #666666;
       font-size: 15px;
@@ -1240,7 +1240,7 @@
         line-height: 28px;
       @include desktops {
           padding-right: 22px;
-      
+
         }
       }
     }
@@ -1262,7 +1262,7 @@
     font-weight: 400;
     letter-spacing: -0.4px;
     line-height: 28px;
-    
+
   }
   .footer-social-list {
     margin-top: 30px;
@@ -1278,7 +1278,7 @@
       }
     }
   }
-  
+
   .footer-list {
     li {
       a {
@@ -1289,7 +1289,7 @@
         padding-top: 12px;
         padding-bottom: 7px;
         color: #1f1f1f;
-  
+
       }
       &:first-child {
           a{

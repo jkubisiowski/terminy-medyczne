@@ -1,5 +1,5 @@
 /*=== Media Query ===*/
-/* /////////////////////////// 
+/* ///////////////////////////
     Header Area
 //////////////////////////// */
 @media (min-width: 768px) {
@@ -148,7 +148,7 @@
 
 .header-btns .btn-1 {
   color: #666666;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: -1px;
@@ -185,7 +185,7 @@
 
 .header-btns .btn-2 a {
   color: #ffffff;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: -1px;
@@ -320,7 +320,7 @@
   text-transform: initial;
 }
 
-/* /////////////////////////// 
+/* ///////////////////////////
     Hero Area
 //////////////////////////// */
 .shapes img {
@@ -533,7 +533,7 @@
   }
 }
 
-/* /////////////////////////// 
+/* ///////////////////////////
     Feature Section
 //////////////////////////// */
 .feature-section {
@@ -1028,7 +1028,7 @@
 }
 
 /* ///////////////////////////
-    Pricing Section 
+    Pricing Section
 //////////////////////////// */
 .pricing-section {
   padding-top: 45px;
@@ -1084,7 +1084,7 @@
 
 .pricing-card .card-head h6 {
   color: #666666;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.43px;
@@ -1095,7 +1095,7 @@
 
 .pricing-card .card-head h2 .small-title {
   color: #1f1f1f;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 30px;
   font-weight: 700;
   letter-spacing: -1.2px;
@@ -1103,7 +1103,7 @@
 
 .pricing-card .card-head h2 .big-txt {
   color: #1f1f1f;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 50px;
   font-weight: 700;
   letter-spacing: -2px;
@@ -1116,7 +1116,7 @@
 
 .pricing-card .card-head h2 .month {
   color: #1f1f1f;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 17px;
   font-weight: 700;
   letter-spacing: -0.68px;
@@ -1133,7 +1133,7 @@
 
 .pricing-card .card-content .pricing-list li {
   color: #1f1f1f;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 17px;
   font-weight: 400;
   letter-spacing: -0.42px;
@@ -1274,7 +1274,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 15px;
   font-weight: 400;
   letter-spacing: -0.32px;
@@ -1446,7 +1446,7 @@
   display: inline-block;
 }
 
-/* /////////////////////////// 
+/* ///////////////////////////
     Footer Section - 06
 //////////////////////////// */
 .footer-section {
