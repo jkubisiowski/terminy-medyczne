@@ -22,7 +22,7 @@ function Layout(props) {
             <div className="row justify-content-center align-items-center position-relative">
               <div className="col-sm-3 col-6 col-lg-2 col-xl-2 order-lg-1">
                 <div className="brand">
-                  <a href=""><img src="image/main-logo.png" alt=""/></a>
+                  <a href="/"><img src="/image/main-logo.png" alt=""/></a>
                 </div>
               </div>
               <div className="col-sm-8 col-lg-3 col-xl-3 d-none d-sm-block order-lg-3">
@@ -31,7 +31,7 @@ function Layout(props) {
                     <a href="#">Sign In</a>
                   </div> */}
                   <div className="btn-2">
-                    <a href="#">Szukaj</a>
+                    <a href="/">Szukaj</a>
                   </div>
                 </div>
               </div>
@@ -156,7 +156,7 @@ function Layout(props) {
                   </p>
                   <ul className="content-list">
                     <li>
-                      <span><i className="icon icon-check-2"></i></span>Staż podyplomowy w Szpitalu Uniwersyteckim w Krakowie. 
+                      <span><i className="icon icon-check-2"></i></span>Staż podyplomowy w Szpitalu Uniwersyteckim w Krakowie.
 
                     </li>
                     <li>
@@ -273,12 +273,12 @@ function Layout(props) {
                         <i className="icon icon-logo-instagram"></i>
                       </a>
                     </li>
-                   </ul> 
+                   </ul>
                 </div>
               </div>
             </div>
           </div>
-        </section>          
+        </section>
         {/* <section className="pricing-section">
           <div className="shape">
             <img src="/image/landing-2-shape.svg" alt=""/>
