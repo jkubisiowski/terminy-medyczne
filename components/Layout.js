@@ -73,7 +73,7 @@ function Layout(props) {
 
                     <li className="menu-item"><a href="#contact">Kontakt</a></li>
 
-                    <li className="menu-item"><a href="#">Blog</a></li>
+                    {/*<li className="menu-item"><a href="/">Blog</a></li>*/}
                   </ul>
                 </div>
                 <div className="mobile-menu"></div>
