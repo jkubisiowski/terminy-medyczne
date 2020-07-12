@@ -253,24 +253,24 @@ function Layout(props) {
                 </div>
               </div>
               <div className="col-xl-5  col-sm-6 order-sm-1">
-                <div className="content-left-content">
+                <div className="content-left-content section-title">
                   <h2>Masz pytania?</h2>
                   <p>
                   Chętnie na nie odpowiemy!
                   </p>
                   <p>
-                  Napisz do nas:
+                  Napisz do nas<br/>
                   <a href="mailto:kontakt@terminymedyczne.pl">kontakt@terminymedyczne.pl</a>
                   </p>
                   <ul className="footer-social-list">
                     <li>
                       <a href="" target="_blank">
-                        <i className="icon icon-logo-fb-simple"></i>
+                        <i className="icon text-white icon-logo-fb-simple icon-white"></i>
                       </a>
                     </li>
                     <li>
                       <a href="https://instagram.com/terminymedyczne/" target="_blank">
-                        <i className="icon icon-logo-instagram"></i>
+                        <i className="icon text-white icon-logo-instagram"></i>
                       </a>
                     </li>
                    </ul>
