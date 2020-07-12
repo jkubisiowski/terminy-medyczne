@@ -1701,3 +1701,37 @@
   padding-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */
+
+.search-form-submit {
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: -1.12px;
+  border-radius: 3px;
+  background-color: #1290a4;
+  margin-top: 20px;
+  height: 60px;
+  width: 177px;
+  font-size: 18px;
+}
+
+.term-body {
+  margin-top: 20px;
+}
+
+.term-category-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 160px;
+  background-color: #eef4f5;
+}
+
+.term-author-label {
+  margin-bottom: 0;
+}
+
+.term-author-name {
+  margin-bottom: 16px;
+}
+
