@@ -12,12 +12,22 @@ const TermPage = (props) => {
       <section className="hero-area term">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-lg-4 order-lg-2">
-              <div className="hero-image">
-                <img src="/image/hero-image.png" alt=""/>
+            <div className="col-lg-4 order-2">
+              <div className="term-author">
+                <p>Termin medyczyny przetłumaczył</p>
+                <h5>{props.authorName}</h5>
+                {props.authorImage && (
+                  <div>
+                    <img
+                      src={urlFor(props.authorImage)
+                        .width(50)
+                        .url()}
+                      alt={props.authorImage}/>
+                  </div>
+                )}
               </div>
             </div>
-            <div className="col-lg-8 order-lg-1">
+            <div className="col-lg-8 order-1">
               <div className="hero-content">
                 <h2>{props.name}</h2>
                 <div className="term-body">
@@ -30,20 +40,10 @@ const TermPage = (props) => {
                 </div>
                 {props.categories && (
                   <ul>
-                    {props.categories.map(category => <li className="term-category-container" key={category}><span
-                      className="term-category-content">{category}</span></li>)}
+                    {props.categories.map(category => <li className="term-category-container" key={category}>
+                      <span>{category}</span></li>)}
                   </ul>
                 )}
-
-                {/*<div className="hero-form">*/}
-                {/*  <form action="">*/}
-                {/*    <div className="form-group">*/}
-                {/*      <input type="text" className="form-control" placeholder="Enter your email address"/>*/}
-                {/*      <button className="submit-btn">Get Started</button>*/}
-                {/*    </div>*/}
-                {/*    <p className="form-text">Already using Shade? <a href="" className="link">Sign In</a></p>*/}
-                {/*  </form>*/}
-                {/*</div>*/}
               </div>
             </div>
           </div>
