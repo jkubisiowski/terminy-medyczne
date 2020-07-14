@@ -1,11 +1,7 @@
-import client from "../client";
-import groq from "groq";
 import Layout from "../components/Layout";
 import SearchForm from "../components/SearchForm";
 
 const Index = (props) => {
-  const {terms = []} = props;
-
   return (
     <Layout>
       <section className="hero-area">
@@ -22,7 +18,7 @@ const Index = (props) => {
                 <p>Tutaj zawodowi lekarze tłumaczą terminy medyczne na zrozumiały język. Tak po prostu.
                 </p>
                 <div className="hero-form">
-                  <SearchForm terms={terms}></SearchForm>
+                  <SearchForm></SearchForm>
                 </div>
               </div>
             </div>
@@ -32,11 +28,8 @@ const Index = (props) => {
       </section>
     </Layout>
   )
-
 }
 
-Index.getInitialProps = async () => ({
-  terms: await client.fetch(groq`*[_type == "term"]`)
-})
+
 
 export default Index

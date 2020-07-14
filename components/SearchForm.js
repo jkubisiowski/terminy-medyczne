@@ -1,9 +1,20 @@
 import Autocomplete from '@material-ui/lab/Autocomplete';
 import TextField from "@material-ui/core/TextField";
 import NoSsr from "@material-ui/core/NoSsr";
+import {useEffect, useState} from "react";
+import client from "../client";
+import groq from "groq";
 
 const SearchForm = (props) => {
-  const [value, setValue] = React.useState(null);
+  const [value, setValue] = useState(null);
+  const [terms, setTerms] = useState([]);
+
+  useEffect(() => {
+    client.fetch(groq`*[_type == "term"]`)
+      .then(data=>{
+        setTerms(data)
+      })
+  }, [])
 
   const onSubmit = event => {
     event.preventDefault();
@@ -12,7 +23,7 @@ const SearchForm = (props) => {
   }
 
   const navigateToTerm = (selectedName) => {
-    const found = props.terms.find(x => x.name === selectedName);
+    const found = terms.find(x => x.name === selectedName);
     if (found !== null) {
       console.log(found)
       window.location.href = "/term/" + found.slug.current;
@@ -22,7 +33,7 @@ const SearchForm = (props) => {
   return (
     <form className="SearchForm" onSubmit={onSubmit}>
       <div className="">
-        <NoSsr>
+        {/*<NoSsr>*/}
           <Autocomplete
             value={value}
             onChange={(event, newValue) => {
@@ -53,7 +64,7 @@ const SearchForm = (props) => {
               // Regular option
               return option.name;
             }}
-            options={props.terms.map((option) => option.name)}
+            options={terms.map((option) => option.name)}
             renderInput={(params) => (
               <TextField
                 {...params}
@@ -63,7 +74,7 @@ const SearchForm = (props) => {
               />
             )}
           />
-        </NoSsr>
+        {/*</NoSsr>*/}
         <button type="submit" className="search-form-submit">Szukaj</button>
       </div>
 
