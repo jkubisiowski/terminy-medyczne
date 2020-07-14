@@ -32,7 +32,7 @@ const SearchForm = (props) => {
   return (
     <form className="SearchForm" onSubmit={onSubmit}>
       <div className="">
-        {/*<NoSsr>*/}
+        <NoSsr>
           <Autocomplete
             value={value}
             onChange={(event, newValue) => {
@@ -73,7 +73,7 @@ const SearchForm = (props) => {
               />
             )}
           />
-        {/*</NoSsr>*/}
+        </NoSsr>
         <button type="submit" className="search-form-submit">Szukaj</button>
       </div>
 
