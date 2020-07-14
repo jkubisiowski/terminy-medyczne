@@ -260,6 +260,8 @@ function Layout(props) {
                   <p>
                   Napisz do nas<br/>
                   <a href="mailto:kontakt@terminymedyczne.pl">kontakt@terminymedyczne.pl</a>
+                  <a href="mailto:malgorzata@terminymedyczne.pl">malgorzata@terminymedyczne.pl</a>
+                  <a href="mailto:konrad@terminymedyczne.pl">konrad@terminymedyczne.pl</a>
                   </p>
                   <ul className="footer-social-list">
                     <li>
