@@ -8,6 +8,7 @@ function Layout(props) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta httpEquiv="X-UA-Compatible" content="ie=edge"/>
         <title>Terminy medyczne</title>
+        <link rel="icon" type="image/png" href="/image/favicon-bg.png"/>
         <link rel="stylesheet" href="/plugins/bootstrap-4.3.1/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="/plugins/meanmenu/meanmenu.css"/>
         <link rel="stylesheet" href="/fonts/ep-icon-fonts/css/style.css"/>
