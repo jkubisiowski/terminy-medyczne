@@ -66,7 +66,6 @@ const query = groq`*[_type == "term" && slug.current == $slug][0]{
 }`
 
 TermPage.getInitialProps = async function (context) {
-  context.res.setHeader('Cache-Control','no-store, must-revalidate');
   // It's important to default the slug so that it doesn't return "undefined"
   const {slug = ""} = context.query
 
