@@ -102,7 +102,7 @@ function Layout(props) {
                   <div className="card-content">
                     <h3>ZUM</h3>
                     <p>Zakażenie układu moczowego, proces zapalny może znajdować się w układzie moczowym czyli w nerkach, pęcherzu lub cewce moczowej</p>
-                    <a href="" className="btn btn-link right-icon">Czytaj dalej <i
+                    <a href="/term/zum" className="btn btn-link right-icon">Czytaj dalej <i
                       className="icon icon-minimal-right"></i></a>
                   </div>
                 </div>
@@ -115,7 +115,7 @@ function Layout(props) {
                   <div className="card-content">
                     <h3>Insulinooporność</h3>
                     <p>Stan, w którym tkanki organizmu są za mało wrażliwe na insulinę, co skutkuje nadmiernym wydzielaniem insuliny by osiągnąć odpowiedni efekt.</p>
-                    <a href="" className="btn btn-link right-icon">Czytaj dalej <i
+                    <a href="/term/insulinoopornosc" className="btn btn-link right-icon">Czytaj dalej <i
                       className="icon icon-minimal-right"></i></a>
                   </div>
                 </div>
@@ -128,7 +128,7 @@ function Layout(props) {
                   <div className="card-content">
                     <h3>Torbiel</h3>
                     <p>Nieprawidłowa przestrzeń w tkance wypełniona płynem. Torbiele mogą wystepować w różnych tkankach np. w jajniku, nerkach, tkance podskórnej.</p>
-                    <a href="" className="btn btn-link right-icon">Czytaj dalej <i
+                    <a href="/term/torbiel" className="btn btn-link right-icon">Czytaj dalej <i
                       className="icon icon-minimal-right"></i></a>
                   </div>
                 </div>
