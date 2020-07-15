@@ -22,8 +22,8 @@ const CategoryPage = (props) => {
         <div className="section-title text-center">
         <h2>{category.title}</h2>
         </div>
-          <div className="row">
-            {category.terms.map(x => (<div key={x.name} className="col-sm-12 col-md-6 col-lg-2 mb--30">
+          <div className="row text-center">
+            {category.terms.map(x => (<div key={x.name} className="col-sm-6 col-md-3 col-lg-2 mb--30">
             <div className="feature-card">
               <div className="card-content">
               <a href={"/terminy/" + x.slug.current}>{x.name}</a>
