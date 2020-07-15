@@ -11,12 +11,14 @@ const TermPage = (props) => {
     name: null,
     authorImage: null,
     authorName: null,
+    authorEmail: null,
     categories: []
   });
 
   useEffect(() => {
     client.fetch(query, {slug: props.slug})
       .then(data => {
+        console.log(data)
         setTerm(data)
       })
   }, [])
@@ -30,6 +32,7 @@ const TermPage = (props) => {
               <div>
                 <p className="term-author-label">Autor tłumaczenia</p>
                 <h5 className="term-author-name">{term.authorName}</h5>
+                <p className="">{term.authorEmail}</p>
                 {term.authorImage && (
                   <div>
                     <img
@@ -76,6 +79,7 @@ const query = groq`*[_type == "term" && slug.current == $slug][0]{
   "authorName": author->name,
   "categories": categories[]->title,
   "authorImage": author->image,
+  "authorEmail": author->email,
   body
 }`
 
