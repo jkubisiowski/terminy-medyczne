@@ -1,71 +1,43 @@
 import Layout from "../components/Layout";
 import groq from "groq";
-import TermPage from "./term/[slug]";
+import {useEffect, useState} from "react";
+import client from "../client";
 
 const Categories = () => {
-    return (
-        <Layout>
-            <section className="hero-area term">
-            <div className="container">
-            <div className="section-title text-center">
-              <h2>Kategorie</h2>
-            </div>
-            <div className="row mb-d-30">
-              <div className="col-md-6 col-lg-3 mb--30">
-                <div className="feature-card">
-                  <div className="card-content">
-                    <h4>Dupa 1</h4>
-                    <a href="" className="btn btn-link right-icon">Sprawdź tutaj <i
-                      className="icon icon-minimal-right"></i></a>
-                  </div>
-                </div>
-              </div>
+  const [categories, setCategories] = useState([]);
 
-              <div className="col-md-6 col-lg-3 mb--30">
-                <div className="feature-card">
-                  <div className="card-content">
-                    <h4>Dupa 2</h4>
-                    <a href="" className="btn btn-link right-icon">Sprawdź tutaj <i
-                      className="icon icon-minimal-right"></i></a>
-                  </div>
-                </div>
-              </div>
+  useEffect(() => {
+    client.fetch(query)
+      .then(data => {
+        setCategories(data)
+      })
+  }, [])
 
+  return (
+    <Layout>
+      <section className="hero-area term">
+        <div className="container">
+          <div className="section-title text-center">
+            <h2>Kategorie</h2>
+          </div>
+          {categories.map(x =>
+            (<div key={x.title} className="row mb-d-30">
               <div className="col-md-6 col-lg-3 mb--30">
                 <div className="feature-card">
                   <div className="card-content">
-                    <h4>Dupa 3</h4>
+                    <h4>{x.title}</h4>
                     <a href="" className="btn btn-link right-icon">Sprawdź tutaj <i
                       className="icon icon-minimal-right"></i></a>
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 col-lg-3 mb--30">
-                <div className="feature-card">
-                  <div className="card-content">
-                    <h4>Dupa 4</h4>
-                    <a href="" className="btn btn-link right-icon">Sprawdź tutaj <i
-                      className="icon icon-minimal-right"></i></a>
-                  </div>
-                </div>
-              </div>
-                </div>
-            </div>
-            </section>
-        </Layout>
-    )
-  }
-const query = groq`*[_type == "term" && slug.current == $slug][0]{
-  name,
-  "authorName": author->name,
-  "categories": categories[]->title,
-  "authorImage": author->image,
-  body
-}`
-
-TermPage.getInitialProps = function (context) {
-  return context.query;
+            </div>)
+          )}
+        </div>
+      </section>
+    </Layout>
+  )
 }
+const query = groq`*[_type == "category"]`
 
-
-  export default Categories;
+export default Categories;
