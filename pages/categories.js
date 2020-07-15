@@ -20,10 +20,10 @@ const Categories = () => {
           <div className="section-title text-center">
             <h2>Kategorie</h2>
           </div>
-          <div className="row mb-d-30">
+          <div className="row">
           {categories.map(x =>
-            (<div key={x.title}>
-              <div className="col-md-12 col-lg-12 mb--30">
+            (<div key={x.title} className="col-sm-12 col-md-6 col-lg-3 mb--30">
+              
                 <div className="feature-card">
                   <div className="card-content">
                     <h4>{x.title}</h4>
@@ -31,7 +31,7 @@ const Categories = () => {
                       className="icon icon-minimal-right"></i></a>
                   </div>
                 </div>
-              </div>
+              
             </div>)
           )}
           </div>
