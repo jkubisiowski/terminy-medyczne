@@ -16,6 +16,21 @@ module.exports = {
         )
       )
       .catch(console.error)
-    return paths
+    const pathsCategories = await client
+      .fetch('*[_type == "category" && defined(slug)].slug.current')
+      .then(data =>
+        data.reduce(
+          (acc, slug) => ({
+            '/': { page: '/' },
+            ...acc,
+            [`/kategorie/${slug}`]: { page: '/kategorie/[slug]', query: { slug } }
+          }),
+          defaultPathMap
+        )
+      )
+      .catch(console.error)
+    return {
+      paths, pathsCategories
+    }
   }
 }

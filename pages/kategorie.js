@@ -23,15 +23,15 @@ const Categories = () => {
           <div className="row">
           {categories.map(x =>
             (<div key={x.title} className="col-sm-12 col-md-6 col-lg-3 mb--30">
-              
+
                 <div className="feature-card">
                   <div className="card-content">
                     <h4>{x.title}</h4>
-                    <a href="" className="btn btn-link right-icon">Sprawdź tutaj <i
+                    <a href={"/kategorie/"+x.slug.current} className="btn btn-link right-icon">Sprawdź tutaj <i
                       className="icon icon-minimal-right"></i></a>
                   </div>
                 </div>
-              
+
             </div>)
           )}
           </div>
