@@ -18,12 +18,17 @@ const CategoryPage = (props) => {
   return (
     <Layout>
       <section className="hero-area term">
-        <h1>{category.title}</h1>
         <div className="container">
-          <div className="row justify-content-center">
-            {category.terms.map(x => (<div key={x.name}>
-              <h2>{x.name}</h2>
+        <div className="section-title text-center">
+        <h2>{category.title}</h2>
+        </div>
+          <div className="row">
+            {category.terms.map(x => (<div key={x.name} className="col-sm-12 col-md-6 col-lg-2 mb--30">
+            <div className="feature-card">
+              <div className="card-content">
               <a href={"/terminy/" + x.slug.current}>{x.name}</a>
+            </div>
+            </div>  
             </div>))}
           </div>
         </div>
