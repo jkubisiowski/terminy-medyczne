@@ -23,7 +23,7 @@ const CategoryPage = (props) => {
           <div className="row justify-content-center">
             {category.terms.map(x => (<div key={x.name}>
               <h2>{x.name}</h2>
-              <a href={"/term/" + x.slug.current}>{x.name}</a>
+              <a href={"/terminy/" + x.slug.current}>{x.name}</a>
             </div>))}
           </div>
         </div>

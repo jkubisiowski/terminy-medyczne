@@ -25,7 +25,7 @@ const SearchForm = (props) => {
   const navigateToTerm = (selectedName) => {
     const found = terms.find(x => x.name.toLowerCase() === selectedName.toLowerCase());
     if (found !== null) {
-      window.location.href = "/term/" + found.slug.current;
+      window.location.href = "/terminy/" + found.slug.current;
     }
   }
 
