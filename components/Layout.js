@@ -71,7 +71,7 @@ function Layout(props) {
 
                     <li className="menu-item"><a href="#about-project">O projekcie</a></li>
 
-                    <li className="menu-item"><a href="categories">Kategorie</a></li>
+                    <li className="menu-item"><a href="/categories">Kategorie</a></li>
 
                     <li className="menu-item"><a href="#contact">Kontakt</a></li>
 

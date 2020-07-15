@@ -1,4 +1,6 @@
 import Layout from "../components/Layout";
+import groq from "groq";
+import TermPage from "./term/[slug]";
 
 const Categories = () => {
     return (
@@ -53,6 +55,17 @@ const Categories = () => {
         </Layout>
     )
   }
-  
+const query = groq`*[_type == "term" && slug.current == $slug][0]{
+  name,
+  "authorName": author->name,
+  "categories": categories[]->title,
+  "authorImage": author->image,
+  body
+}`
+
+TermPage.getInitialProps = function (context) {
+  return context.query;
+}
+
+
   export default Categories;
-  
