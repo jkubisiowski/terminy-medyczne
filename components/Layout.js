@@ -15,6 +15,18 @@ function Layout(props) {
         <link rel="stylesheet" href="/fonts/fontawesome-5/css/all.min.css"/>
         <link rel="stylesheet" href="/css/settings.css"/>
         <link rel="stylesheet" href="/css/style.css"/>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172432228-1"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+                window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-172432228-1');
+              `,
+          }}
+        />
       </Head>
       <div className="site-wrapper">
         <header className="site-header">
