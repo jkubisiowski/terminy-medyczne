@@ -18,7 +18,6 @@ const TermPage = (props) => {
   useEffect(() => {
     client.fetch(query, {slug: props.slug})
       .then(data => {
-        console.log(data)
         setTerm(data)
       })
   }, [])
@@ -32,7 +31,7 @@ const TermPage = (props) => {
               <div>
                 <p className="term-author-label">Autor tłumaczenia</p>
                 <h5 className="term-author-name">{term.authorName}</h5>
-                <p className="term-author-email">{term.authorEmail}</p>
+                <a className="term-author-email" href={"mailto:" + term.authorEmail} target="_blank">{term.authorEmail}</a>
                 {term.authorImage && (
                   <div>
                     <img

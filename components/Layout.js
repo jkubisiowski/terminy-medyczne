@@ -46,51 +46,17 @@ function Layout(props) {
                     <a href="#">Sign In</a>
                   </div> */}
                   <div className="btn-2">
-                    <a href="/">Szukaj {process.env.NODE_ENV}</a>
+                    <a href="/">Szukaj</a>
                   </div>
                 </div>
               </div>
               <div className="col-sm-1 col-6 col-lg-7 col-xl-6 offset-xl-1 position-static order-lg-2">
                 <div className="main-navigation">
                   <ul className="main-menu">
-                    {/* <li className="menu-item has-dropdown">
-                      <a href="#features">Free Landing Pages</a>
-                      <ul className="menu-dropdown">
-                        <li className="single-item">
-                          <a href="../s01/index.html">
-                            <h3>Mobile Application</h3>
-                            <p>Best for Mobile App Presentation</p>
-                          </a>
-                        </li>
-                        <li className="single-item">
-                          <a href="../s02/index.html">
-                            <h3>Web Application</h3>
-                            <p>Best for Mobile App Presentation</p>
-                          </a>
-                        </li>
-                        <li className="single-item">
-                          <a href="../s03/index.html">
-                            <h3>SaaS Application</h3>
-                            <p>Best for Mobile App Presentation</p>
-                          </a>
-                        </li>
-                        <li className="single-item">
-                          <a href="../s04/index.html">
-                            <h3> SaaS Subscription</h3>
-                            <p>Best for Mobile App Presentation</p>
-                          </a>
-                        </li>
-                      </ul>
-                    </li> */}
-                    <li className="menu-item "><a href="#about-us">O nas</a></li>
-
+                    <li className="menu-item"><a href="#about-us">O nas</a></li>
                     <li className="menu-item"><a href="#about-project">O projekcie</a></li>
-
                     <li className="menu-item"><a href="/kategorie">Kategorie</a></li>
-
                     <li className="menu-item"><a href="#contact">Kontakt</a></li>
-
-                    {/*<li className="menu-item"><a href="/">Blog</a></li>*/}
                   </ul>
                 </div>
                 <div className="mobile-menu"></div>
