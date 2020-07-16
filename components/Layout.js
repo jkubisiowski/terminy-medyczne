@@ -15,18 +15,21 @@ function Layout(props) {
         <link rel="stylesheet" href="/fonts/fontawesome-5/css/all.min.css"/>
         <link rel="stylesheet" href="/css/settings.css"/>
         <link rel="stylesheet" href="/css/style.css"/>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172432228-1"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
+        {process.env.NODE_ENV === 'production' && (
+          <>
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172432228-1"></script>
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
                 window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments)}
           gtag('js', new Date());
 
           gtag('config', 'UA-172432228-1');
               `,
-          }}
-        />
+              }}
+            />
+          </>)}
       </Head>
       <div className="site-wrapper">
         <header className="site-header">
@@ -43,7 +46,7 @@ function Layout(props) {
                     <a href="#">Sign In</a>
                   </div> */}
                   <div className="btn-2">
-                    <a href="/">Szukaj</a>
+                    <a href="/">Szukaj {process.env.NODE_ENV}</a>
                   </div>
                 </div>
               </div>
@@ -109,11 +112,12 @@ function Layout(props) {
               <div className="col-md-6 col-lg-4 mb--30">
                 <div className="feature-card">
                   <div className="card-icon">
-                  <i className="fas fa-stethoscope"></i>
+                    <i className="fas fa-stethoscope"></i>
                   </div>
                   <div className="card-content">
                     <h3>ZUM</h3>
-                    <p>Zakażenie układu moczowego, proces zapalny może znajdować się w układzie moczowym czyli w nerkach, pęcherzu lub cewce moczowej</p>
+                    <p>Zakażenie układu moczowego, proces zapalny może znajdować się w układzie moczowym czyli w
+                      nerkach, pęcherzu lub cewce moczowej</p>
                     <a href="/terminy/zum" className="btn btn-link right-icon">Czytaj dalej <i
                       className="icon icon-minimal-right"></i></a>
                   </div>
@@ -122,11 +126,12 @@ function Layout(props) {
               <div className="col-md-6 col-lg-4 mb--30">
                 <div className="feature-card">
                   <div className="card-icon">
-                  <i className="fas fa-syringe"></i>
+                    <i className="fas fa-syringe"></i>
                   </div>
                   <div className="card-content">
                     <h3>Insulinooporność</h3>
-                    <p>Stan, w którym tkanki organizmu są za mało wrażliwe na insulinę, co skutkuje nadmiernym wydzielaniem insuliny by osiągnąć odpowiedni efekt.</p>
+                    <p>Stan, w którym tkanki organizmu są za mało wrażliwe na insulinę, co skutkuje nadmiernym
+                      wydzielaniem insuliny by osiągnąć odpowiedni efekt.</p>
                     <a href="/terminy/insulionoopornosc" className="btn btn-link right-icon">Czytaj dalej <i
                       className="icon icon-minimal-right"></i></a>
                   </div>
@@ -135,11 +140,12 @@ function Layout(props) {
               <div className="col-md-6 col-lg-4 mb--30">
                 <div className="feature-card">
                   <div className="card-icon">
-                  <i className="fas fa-heartbeat"></i>
+                    <i className="fas fa-heartbeat"></i>
                   </div>
                   <div className="card-content">
                     <h3>Torbiel</h3>
-                    <p>Nieprawidłowa przestrzeń w tkance wypełniona płynem. Torbiele mogą wystepować w różnych tkankach np. w jajniku, nerkach, tkance podskórnej.</p>
+                    <p>Nieprawidłowa przestrzeń w tkance wypełniona płynem. Torbiele mogą wystepować w różnych tkankach
+                      np. w jajniku, nerkach, tkance podskórnej.</p>
                     <a href="/terminy/torbiel" className="btn btn-link right-icon">Czytaj dalej <i
                       className="icon icon-minimal-right"></i></a>
                   </div>
@@ -163,22 +169,27 @@ function Layout(props) {
                 <div className="content-right-content">
                   <h2>Konrad Janik</h2>
                   <p>
-                    Lekarz w trakcie specjalizacji z radiologii i diagnostyki obrazowej. Studiował w Collegium Medicum Uniwersytetu Jagiellońskiego w Krakowie oraz Julius-Maximilians-Universität w Würzburgu.
+                    Lekarz w trakcie specjalizacji z radiologii i diagnostyki obrazowej. Studiował w Collegium Medicum
+                    Uniwersytetu Jagiellońskiego w Krakowie oraz Julius-Maximilians-Universität w Würzburgu.
                   </p>
                   <ul className="content-list">
                     <li>
-                      <span><i className="icon icon-check-2"></i></span>Staż podyplomowy w Szpitalu Uniwersyteckim w Krakowie.
+                      <span><i className="icon icon-check-2"></i></span>Staż podyplomowy w Szpitalu Uniwersyteckim w
+                      Krakowie.
 
                     </li>
                     <li>
-                      <span><i className="icon icon-check-2"></i></span>Kierownik działu medycznego firmy farmaceutycznej produkującej szczepionki
+                      <span><i className="icon icon-check-2"></i></span>Kierownik działu medycznego firmy
+                      farmaceutycznej produkującej szczepionki
                     </li>
                     <li>
-                      <span><i className="icon icon-check-2"></i></span>Tłumacz medyczny z języka angielskiego i niemieckiego
+                      <span><i className="icon icon-check-2"></i></span>Tłumacz medyczny z języka angielskiego i
+                      niemieckiego
                     </li>
                   </ul>
                   <p>
-                  Interesują go zastosowania sztucznej inteligencji w medycynie, potencjał mikrobiomu oraz futurologia medyczna.
+                    Interesują go zastosowania sztucznej inteligencji w medycynie, potencjał mikrobiomu oraz futurologia
+                    medyczna.
                   </p>
                 </div>
               </div>
@@ -197,21 +208,26 @@ function Layout(props) {
                 <div className="content-left-content">
                   <h2>Małgorzata Łukaszewicz</h2>
                   <p>
-                  Lekarz, obecnie w trakcie stażu podyplomowego. Ukończyła I Wydział Lekarski Warszawskiego Uniwersytetu Medycznego.
+                    Lekarz, obecnie w trakcie stażu podyplomowego. Ukończyła I Wydział Lekarski Warszawskiego
+                    Uniwersytetu Medycznego.
                   </p>
                   <ul className="content-list">
                     <li>
-                      <span><i className="icon icon-check-2"></i></span>Przewodnicząca Studenckiego Koła Informatyki Medycznej i Telemedycyny w latach 2017-2019
+                      <span><i className="icon icon-check-2"></i></span>Przewodnicząca Studenckiego Koła Informatyki
+                      Medycznej i Telemedycyny w latach 2017-2019
                     </li>
                     <li>
-                      <span><i className="icon icon-check-2"></i></span>Wolontariusz w Zakładzie Informatyki Medycznej i Telemedycyny Warszawskiego Uniwersytetu Medycznego
+                      <span><i className="icon icon-check-2"></i></span>Wolontariusz w Zakładzie Informatyki Medycznej i
+                      Telemedycyny Warszawskiego Uniwersytetu Medycznego
                     </li>
                     <li>
-                      <span><i className="icon icon-check-2"></i></span>Od 2016 r. zajmuje się Digital Marketingiem w branży farmaceutycznej oraz wyrobów medycznych.
+                      <span><i className="icon icon-check-2"></i></span>Od 2016 r. zajmuje się Digital Marketingiem w
+                      branży farmaceutycznej oraz wyrobów medycznych.
                     </li>
                   </ul>
                   <p>
-                  Wierzy, że innowacje pomogą poprawić komfort i skuteczność leczenia, dlatego chce je wykorzystywać w pracy lekarza.
+                    Wierzy, że innowacje pomogą poprawić komfort i skuteczność leczenia, dlatego chce je wykorzystywać w
+                    pracy lekarza.
                   </p>
                 </div>
               </div>
@@ -234,10 +250,12 @@ function Layout(props) {
                 <div className="content-left-content">
                   <h2>Naszą misją jest usprawnienie komunikacji na linii lekarz-pacjent</h2>
                   <p>
-                  <b>Jesteś pacjentem?</b> Masz dostęp do rzetelnych, sprawdzonych informacji by lepiej zrozumieć skomplikowane rezultaty badań, wyniki konsultacji i wyisy ze szpitala.
+                    <b>Jesteś pacjentem?</b> Masz dostęp do rzetelnych, sprawdzonych informacji by lepiej zrozumieć
+                    skomplikowane rezultaty badań, wyniki konsultacji i wyisy ze szpitala.
                   </p>
                   <p>
-                  <b>Jesteś lekarzem?</b> Masz pod ręką wygodne narzędzie, które pomaga sprawnie wytłumaczyć pacjentowi zaawiłe pojęcia.
+                    <b>Jesteś lekarzem?</b> Masz pod ręką wygodne narzędzie, które pomaga sprawnie wytłumaczyć
+                    pacjentowi zaawiłe pojęcia.
                   </p>
                   {/* <div className="content-bottom-part">
                     <p></p>
@@ -267,13 +285,13 @@ function Layout(props) {
                 <div className="content-left-content section-title">
                   <h2>Masz pytania?</h2>
                   <p>
-                  Chętnie na nie odpowiemy!
+                    Chętnie na nie odpowiemy!
                   </p>
                   <p>
-                  Napisz do nas<br/>
-                  <a href="mailto:kontakt@terminymedyczne.pl">kontakt@terminymedyczne.pl</a>
-                  <a href="mailto:malgorzata@terminymedyczne.pl">malgorzata@terminymedyczne.pl</a>
-                  <a href="mailto:konrad@terminymedyczne.pl">konrad@terminymedyczne.pl</a>
+                    Napisz do nas<br/>
+                    <a href="mailto:kontakt@terminymedyczne.pl">kontakt@terminymedyczne.pl</a>
+                    <a href="mailto:malgorzata@terminymedyczne.pl">malgorzata@terminymedyczne.pl</a>
+                    <a href="mailto:konrad@terminymedyczne.pl">konrad@terminymedyczne.pl</a>
                   </p>
                   <ul className="footer-social-list">
                     <li>
@@ -286,7 +304,7 @@ function Layout(props) {
                         <i className="icon text-white icon-logo-instagram"></i>
                       </a>
                     </li>
-                   </ul>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -432,7 +450,8 @@ function Layout(props) {
                 <div className="col-lg-10 col-xl-8">
                   <div className="footer-newsletter-content">
                     <h2>Zapisz się do newslettera</h2>
-                    <p>Dołącz do naszej listy mailingowej i bądź na bieżąco z najnowszymi ciekawostkami ze świata medycznego</p>
+                    <p>Dołącz do naszej listy mailingowej i bądź na bieżąco z najnowszymi ciekawostkami ze świata
+                      medycznego</p>
                   </div>
                 </div>
                 <div className="col-lg-7 col-xl-6">
@@ -440,7 +459,7 @@ function Layout(props) {
                     <form action="">
                       <div className="form-group">
                         <input type="text" className="form-control" placeholder="Wpisz adres email"/>
-                          <button className="submit-btn">Zapisz się</button>
+                        <button className="submit-btn">Zapisz się</button>
                       </div>
                       {/* <p className="form-text"><i className="icon icon-lock"></i>Your data is protected. We never spam
                         in your inbox</p> */}
@@ -471,7 +490,9 @@ function Layout(props) {
                         <i className="icon icon-logo-instagram"></i>
                       </a>
                     </li>
-                    <li><a href="https://iconscout.com/illustrations/doctor" target="_blank">Doctor Illustration</a> by <a href="https://iconscout.com/contributors/manypixels-gallery" target="_blank">Manypixels Gallery</a></li>
+                    <li><a href="https://iconscout.com/illustrations/doctor" target="_blank">Doctor
+                      Illustration</a> by <a href="https://iconscout.com/contributors/manypixels-gallery"
+                                             target="_blank">Manypixels Gallery</a></li>
                   </ul>
                 </div>
               </div>
