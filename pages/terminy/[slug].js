@@ -32,7 +32,7 @@ const TermPage = (props) => {
               <div>
                 <p className="term-author-label">Autor tłumaczenia</p>
                 <h5 className="term-author-name">{term.authorName}</h5>
-                <p className="">{term.authorEmail}</p>
+                <p className="term-author-email">{term.authorEmail}</p>
                 {term.authorImage && (
                   <div>
                     <img
