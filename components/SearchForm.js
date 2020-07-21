@@ -25,8 +25,14 @@ const SearchForm = (props) => {
   const onSubmit = event => {
     event.preventDefault();
     if (value !== null)
-      navigateToTerm(value.name)
-    else {
+      navigateToTerm(value.name);
+  }
+
+  const navigateToTerm = (selectedName) => {
+    const found = terms.find(x => x.name.toLowerCase() === selectedName.toLowerCase());
+    if (found !== null) {
+      window.location.href = "/terminy/" + found.slug.current;
+    } else {
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -34,13 +40,6 @@ const SearchForm = (props) => {
       })
         .then(() => alert("Success!"))
         .catch(error => alert(error));
-    }
-  }
-
-  const navigateToTerm = (selectedName) => {
-    const found = terms.find(x => x.name.toLowerCase() === selectedName.toLowerCase());
-    if (found !== null) {
-      window.location.href = "/terminy/" + found.slug.current;
     }
   }
 
