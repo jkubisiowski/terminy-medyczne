@@ -15,8 +15,8 @@ const Index = (props) => {
             <div className="col-lg-7 order-lg-1">
               <div className="hero-content">
                 <h2>Sprawdź, co lekarz miał na myśli</h2>
-                <p>Tutaj zawodowi lekarze tłumaczą terminy medyczne na zrozumiały język. Tak po prostu.
-                </p>
+                <p>Tutaj lekarze tłumaczą trudne terminy i skróty medyczne na zrozumiały język.</p>
+                <p>Tak po prostu.</p>
                 <div className="hero-form">
                   <SearchForm></SearchForm>
                 </div>

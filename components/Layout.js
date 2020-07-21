@@ -73,7 +73,7 @@ function Layout(props) {
           </div>
           <div className="container">
             <div className="section-title text-center">
-              <h2>Najczęściej wyszukiwane hasła</h2>
+              <h3>Najczęściej wyszukiwane hasła</h3>
             </div>
             <div className="row mb-d-30">
               <div className="col-md-6 col-lg-4 mb--30">
@@ -141,23 +141,19 @@ function Layout(props) {
                   </p>
                   <ul className="content-list">
                     <li>
-                      <span><i className="icon icon-check-2"></i></span>Staż podyplomowy w Szpitalu Uniwersyteckim w
-                      Krakowie.
-
+                      <span><i className="icon icon-check-2"></i></span>Kierownik działu medycznego Instytutu IBSS BIOMED S.A.
                     </li>
                     <li>
-                      <span><i className="icon icon-check-2"></i></span>Kierownik działu medycznego firmy
-                      farmaceutycznej produkującej szczepionki
+                      <span><i className="icon icon-check-2"></i></span>Tłumacz specjalistycznych tekstów medycznych z języka angielskiego i niemieckiego
                     </li>
                     <li>
-                      <span><i className="icon icon-check-2"></i></span>Tłumacz medyczny z języka angielskiego i
-                      niemieckiego
+                      <span><i className="icon icon-check-2"></i></span>Laureat teleturnieju “Milionerzy”	
                     </li>
                   </ul>
                   <p>
-                    Interesują go zastosowania sztucznej inteligencji w medycynie, potencjał mikrobiomu oraz futurologia
-                    medyczna.
+                  Interesują mnie zastosowania sztucznej inteligencji w medycynie, potencjał mikrobiomu oraz futurologia medyczna.
                   </p>
+                  <p><b><i>Jeśli nie potrafisz czegoś prosto wytłumaczyć - to znaczy, że tak naprawdę tego nie rozumiesz.</i></b> ~ cytat przypisywany A. Einsteinowi</p>
                 </div>
               </div>
             </div>

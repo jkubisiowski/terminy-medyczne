@@ -67,7 +67,7 @@ const SearchForm = (props) => {
             renderInput={(params) => (
               <TextField
                 {...params}
-                label="Wpisz termin medyczny"
+                label="Wpisz termin lub skrót medyczny"
                 variant="outlined"
                 InputProps={{...params.InputProps, type: 'search'}}
               />
