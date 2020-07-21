@@ -30,7 +30,7 @@ const SearchForm = (props) => {
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({ "form-name": "contact", value })
+        body: encode({ "form-name": "search", "term": value })
       })
         .then(() => alert("Success!"))
         .catch(error => alert(error));
