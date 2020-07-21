@@ -403,15 +403,21 @@
   margin-bottom: 0px;
 }
 
+@media (min-width: 400px) {
+  .hero-form {
+    padding-top: 15px;
+  }
+}
+
 @media (min-width: 992px) {
   .hero-form {
-    padding: 30px 0 0;
+    padding: 15px 30px 0 0;
   }
 }
 
 @media (min-width: 1200px) {
   .hero-form {
-    padding: 30px 75px 0 0;
+    padding: 15px 75px 0 0;
   }
 }
 
