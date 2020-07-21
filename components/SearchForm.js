@@ -24,78 +24,86 @@ const SearchForm = (props) => {
 
   const onSubmit = event => {
     event.preventDefault();
-    console.log(value)
     if (value !== null)
-      navigateToTerm(value.name);
+      handleSearchTerm(value.name);
   }
 
-  const navigateToTerm = (selectedName) => {
-    const found = terms.find(x => x.name.toLowerCase() === selectedName.toLowerCase());
+  const submitMissingTerm = () => {
+    fetch("/", {
+      method: "POST",
+      headers: {"Content-Type": "application/x-www-form-urlencoded"},
+      body: encode({"form-name": "search", "term": value.name})
+    })
+      .then(() => alert("Brak hasła w bazie - zostaliśmy poinformowani o brakującym tłumaczeniu"))
+      .catch(error => console.log(error));
+  }
+
+  const navigateToTerm = found => {
+    window.location.href = "/terminy/" + found.slug.current;
+  }
+
+  const handleSearchTerm = (selectedTerm) => {
+    const found = terms.find(x => x.name.toLowerCase() === selectedTerm.toLowerCase());
     if (found) {
-      window.location.href = "/terminy/" + found.slug.current;
+      navigateToTerm(found)
     } else {
-      fetch("/", {
-        method: "POST",
-        headers: {"Content-Type": "application/x-www-form-urlencoded"},
-        body: encode({"form-name": "search", "term": value.name})
-      })
-        .then(() => alert("Success!"))
-        .catch(error => alert(error));
+      submitMissingTerm()
     }
   }
 
   return (
     <>
       <form name="search" netlify="true" netlify-honeypot="bot-field" hidden>
-        <input type="text" name="term" />
+        <input type="text" name="term"/>
       </form>
-      <form className="SearchForm" onSubmit={onSubmit}>
-        <div className="">
-          <Autocomplete
-            value={value}
-            onChange={(event, newValue) => {
-              if (typeof newValue === 'string') {
-                setValue({
-                  name: newValue,
-                });
-              } else if (newValue && newValue.inputValue) {
-                // Create a new value from the user input
-                setValue({
-                  name: newValue.inputValue,
-                });
-              } else {
-                setValue(newValue);
-              }
-            }}
-            freeSolo
-            disableClearable
-            getOptionLabel={(option) => {
-              // Value selected with enter, right from the input
-              if (typeof option === 'string') {
-                return option;
-              }
-              // Add "xxx" option created dynamically
-              if (option.inputValue) {
-                return option.inputValue;
-              }
-              // Regular option
-              return option.name;
-            }}
-            options={terms.map((option) => option.name)}
-            renderInput={(params) => (
-              <TextField
-                {...params}
-                label="Wpisz termin lub skrót medyczny"
-                variant="outlined"
-                InputProps={{...params.InputProps, type: 'search'}}
-                name="term"
-              />
-            )}
-          />
-          <button type="submit" className="search-form-submit">Szukaj</button>
-        </div>
-
-      </form>
+      <NoSsr>
+        <form className="SearchForm" onSubmit={onSubmit}>
+          <div className="">
+            <Autocomplete
+              value={value}
+              onChange={(event, newValue) => {
+                if (typeof newValue === 'string') {
+                  setValue({
+                    name: newValue,
+                  });
+                } else if (newValue && newValue.inputValue) {
+                  // Create a new value from the user input
+                  setValue({
+                    name: newValue.inputValue,
+                  });
+                } else {
+                  setValue(newValue);
+                }
+              }}
+              freeSolo
+              disableClearable
+              getOptionLabel={(option) => {
+                // Value selected with enter, right from the input
+                if (typeof option === 'string') {
+                  return option;
+                }
+                // Add "xxx" option created dynamically
+                if (option.inputValue) {
+                  return option.inputValue;
+                }
+                // Regular option
+                return option.name;
+              }}
+              options={terms.map((option) => option.name)}
+              renderInput={(params) => (
+                <TextField
+                  {...params}
+                  label="Wpisz termin lub skrót medyczny"
+                  variant="outlined"
+                  InputProps={{...params.InputProps, type: 'search'}}
+                  name="term"
+                />
+              )}
+            />
+            <button type="submit" className="search-form-submit">Szukaj</button>
+          </div>
+        </form>
+      </NoSsr>
     </>
 
   )
