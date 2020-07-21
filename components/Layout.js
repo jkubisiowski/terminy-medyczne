@@ -253,7 +253,7 @@ function Layout(props) {
                   </p>
                   <ul className="footer-social-list">
                     <li>
-                      <a href="" target="_blank">
+                      <a href="https://www.facebook.com/terminymedyczne/" target="_blank">
                         <i className="icon text-white icon-logo-fb-simple icon-white"></i>
                       </a>
                     </li>
@@ -455,8 +455,27 @@ function Layout(props) {
                     <h6>Linki</h6>
                   </div>
                   <ul className="footer-list">
+                    <li className="social-media">
+                      <a href="https://www.facebook.com/terminymedyczne/" target="_blank">
+                        <i className="icon icon-logo-fb-simple"></i>
+                      </a>
+                      <a href="https://instagram.com/terminymedyczne/" target="_blank">
+                        <i className="icon icon-logo-instagram"></i>
+                      </a>
+                    </li>
                     <li><a href="polityka-prywatnosci" target="_blank">Polityka prywatności</a></li>
                     <li><a href="regulamin-serwisu" target="_blank">Regulamin serwisu</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div className="col-lg-3 col-sm-4 col-6 col-margin">
+                <div className="single-footer">
+                  <div className="footer-title">
+                    <h6>Powered by</h6>
+                  </div>
+                  <ul className="footer-list">
+                  <li><a href="https://karolinavirtualassistant.com/" target="_blank">karolinavirtualassistant.com</a></li>
+                  <li><a href="https://www.jakubkubisiowski.pl/" target="_blank">jakubkubisiowski.pl</a></li>
                   </ul>
                 </div>
               </div>
@@ -466,6 +485,7 @@ function Layout(props) {
                     <h6>Copyright</h6>
                   </div>
                   <ul className="footer-list">
+                  <li><a href="https://terminymedyczne.pl" target="_blank">TerminyMedyczne.pl</a></li>
                   <li><a href="https://iconscout.com/illustrations/doctor" target="_blank">Doctor
                       Illustration</a> by <a href="https://iconscout.com/contributors/manypixels-gallery"
                                              target="_blank">Manypixels Gallery</a></li>
@@ -475,18 +495,7 @@ function Layout(props) {
               <div className="col-lg-2 col-sm-4 col-6 col-margin">
                 <div className="single-footer">
                   <div className="footer-title"></div>
-                  <ul className="footer-social-list">
-                    <li>
-                      <a href="https://www.facebook.com/terminymedyczne/" target="_blank">
-                        <i className="icon icon-logo-fb-simple"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://instagram.com/terminymedyczne/" target="_blank">
-                        <i className="icon icon-logo-instagram"></i>
-                      </a>
-                    </li>
-                  </ul>
+                 
                 </div>
               </div>
             </div>
