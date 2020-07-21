@@ -460,6 +460,7 @@ function Layout(props) {
                     <li><a href="https://iconscout.com/illustrations/doctor" target="_blank">Doctor
                       Illustration</a> by <a href="https://iconscout.com/contributors/manypixels-gallery"
                                              target="_blank">Manypixels Gallery</a></li>
+                    <li><a href="/polityka-prywatnosci" target="_blank">Polityka prywatności</a></li>
                   </ul>
                 </div>
               </div>
