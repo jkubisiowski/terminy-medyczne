@@ -16,10 +16,25 @@ const SearchForm = (props) => {
       })
   }, [])
 
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+  }
+
   const onSubmit = event => {
     event.preventDefault();
     if (value !== null)
       navigateToTerm(value.name)
+    else {
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({ "form-name": "contact", value })
+      })
+        .then(() => alert("Success!"))
+        .catch(error => alert(error));
+    }
   }
 
   const navigateToTerm = (selectedName) => {
