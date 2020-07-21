@@ -1,20 +1,6 @@
 import Head from "next/head";
-import {useEffect, useState} from "react";
 
 function Layout(props) {
-  const [navigation, setNavigation] = useState(null);
-
-  useEffect(() => {
-    let navigationElement = $(navigation)
-    navigationElement.meanmenu({
-      meanScreenWidth: "992",
-      meanMenuContainer: '.mobile-menu',
-      meanMenuClose: "<i class='icon icon-simple-remove'></i>",
-      meanMenuOpen: "<i class='icon icon-menu-34'></i>",
-      meanExpand: "",
-    });
-
-  });
   return (
     <>
       <Head>
@@ -55,7 +41,7 @@ function Layout(props) {
                 </div>
               </div>
               <div className="col-sm-1 col-6 col-lg-7 col-xl-6 offset-xl-1 position-static order-lg-2">
-                <div className="main-navigation" ref={el => setNavigation(el)}>
+                <div className="main-navigation">
                   <ul className="main-menu">
                     <li className="menu-item"><a href="/">Sprawdź termin</a></li>
                     <li className="menu-item"><a href="#about-us">O nas</a></li>
