@@ -1,6 +1,5 @@
 import Autocomplete from '@material-ui/lab/Autocomplete';
 import TextField from "@material-ui/core/TextField";
-import NoSsr from "@material-ui/core/NoSsr";
 import {useEffect, useState} from "react";
 import client from "../client";
 import groq from "groq";
@@ -62,7 +61,6 @@ const SearchForm = (props) => {
       <form name="search" netlify="true" netlify-honeypot="bot-field" hidden>
         <input type="text" name="term"/>
       </form>
-      <NoSsr>
         <form className="SearchForm" onSubmit={onSubmit}>
           <div className="">
             <Autocomplete
@@ -123,7 +121,6 @@ const SearchForm = (props) => {
             <button type="submit" className="search-form-submit">Szukaj</button>
           </div>
         </form>
-      </NoSsr>
     </>
 
   )
