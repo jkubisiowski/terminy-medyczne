@@ -411,7 +411,7 @@ function Layout(props) {
 
         <div className="footer-section">
           <div className="container">
-            <div className="footer-newsletter-section">
+            {/* <div className="footer-newsletter-section">
               <div className="row justify-content-center">
                 <div className="col-lg-10 col-xl-8">
                   <div className="footer-newsletter-content">
@@ -427,13 +427,13 @@ function Layout(props) {
                         <input type="text" className="form-control" placeholder="Wpisz adres email"/>
                         <button className="submit-btn">Zapisz się</button>
                       </div>
-                      {/* <p className="form-text"><i className="icon icon-lock"></i>Your data is protected. We never spam
-                        in your inbox</p> */}
+                      <p className="form-text"><i className="icon icon-lock"></i>Your data is protected. We never spam
+                        in your inbox</p>
                     </form>
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             <div className="row margin-decrese">
               <div className="col-xl-4 col-lg-5 col-margin">
