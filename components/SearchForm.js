@@ -4,6 +4,7 @@ import NoSsr from "@material-ui/core/NoSsr";
 import {useEffect, useState} from "react";
 import client from "../client";
 import groq from "groq";
+import {createFilterOptions} from "@material-ui/lab";
 
 const SearchForm = (props) => {
   const [value, setValue] = useState(null);
@@ -16,6 +17,8 @@ const SearchForm = (props) => {
       })
   }, [])
 
+  const filter = createFilterOptions();
+
   const encode = (data) => {
     return Object.keys(data)
       .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
@@ -24,6 +27,8 @@ const SearchForm = (props) => {
 
   const onSubmit = event => {
     event.preventDefault();
+    console.log(event.target)
+    console.log(value)
     if (value !== null)
       handleSearchTerm(value.name);
   }
@@ -43,6 +48,7 @@ const SearchForm = (props) => {
   }
 
   const handleSearchTerm = (selectedTerm) => {
+
     const found = terms.find(x => x.name.toLowerCase() === selectedTerm.toLowerCase());
     if (found) {
       navigateToTerm(found)
@@ -75,8 +81,23 @@ const SearchForm = (props) => {
                   setValue(newValue);
                 }
               }}
-              freeSolo
-              disableClearable
+              filterOptions={(options, params) => {
+                const filtered = filter(options, params);
+
+                // Suggest the creation of a new value
+                if (params.inputValue !== '') {
+                  filtered.push({
+                    inputValue: params.inputValue,
+                    name: `Szukaj "${params.inputValue}"`,
+                  });
+                }
+
+                return filtered;
+              }}
+              selectOnFocus
+              clearOnBlur
+              handleHomeEndKeys
+              options={terms}
               getOptionLabel={(option) => {
                 // Value selected with enter, right from the input
                 if (typeof option === 'string') {
@@ -89,14 +110,13 @@ const SearchForm = (props) => {
                 // Regular option
                 return option.name;
               }}
-              options={terms.map((option) => option.name)}
+              renderOption={(option) => option.name}
+              freeSolo
               renderInput={(params) => (
                 <TextField
                   {...params}
                   label="Wpisz termin lub skrót medyczny"
                   variant="outlined"
-                  InputProps={{...params.InputProps, type: 'search'}}
-                  name="term"
                 />
               )}
             />
