@@ -437,18 +437,56 @@ function Layout(props) {
             </div> */}
 
             <div className="row margin-decrese">
-              <div className="col-xl-4 col-lg-5 col-margin">
+              {/* <div className="col-xl-4 col-lg-5 col-margin">
                 <div className="single-footer">
-                  {/* <div className="footer-title">
+                  <div className="footer-title">
                     <img src="/image/footer-logo.png" alt=""/>
                   </div>
-                  <div className="footer-text">
-                    <p>Big, small, online, offline, local. Size doesn't matter. We work on diverse projects for top
-                      brands as well as for cool startups. </p>
+                  </div>
                   </div> */}
+                <div className="col-lg-2 col-sm-4 col-6 col-margin">
+                <div className="single-footer">
+                  <div className="footer-title">
+                    <h6>Menu</h6>
+                  </div>
+                  <ul className="footer-list">
+                    <li><a href="/">Znajdź termin</a></li>
+                    <li><a href="#about-us">O nas</a></li>
+                    <li><a href="#about-project">O projekcie</a></li>
+                    <li><a href="kategorie">Kategorie</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div className="col-lg-2 col-sm-4 col-6 col-margin">
+                <div className="single-footer">
+                  <div className="footer-title">
+                    <h6>Linki</h6>
+                  </div>
+                  <ul className="footer-list">
+                    <li><a href="polityka-prywatnosci" target="_blank">Polityka prywatności</a></li>
+                    <li><a href="">Regulamin serwisu</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div className="col-lg-2 col-sm-4 col-6 col-margin">
+                <div className="single-footer">
+                  <div className="footer-title">
+                    <h6>Copyright</h6>
+                  </div>
+                  <ul className="footer-list">
+                  <li><a href="https://iconscout.com/illustrations/doctor" target="_blank">Doctor
+                      Illustration</a> by <a href="https://iconscout.com/contributors/manypixels-gallery"
+                                             target="_blank">Manypixels Gallery</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div className="col-lg-2 col-sm-4 col-6 col-margin">
+                <div className="single-footer">
+                  <div className="footer-title"></div>
                   <ul className="footer-social-list">
                     <li>
-                      <a href="">
+                      <a href="https://www.facebook.com/terminymedyczne/" target="_blank">
                         <i className="icon icon-logo-fb-simple"></i>
                       </a>
                     </li>
@@ -457,52 +495,9 @@ function Layout(props) {
                         <i className="icon icon-logo-instagram"></i>
                       </a>
                     </li>
-                    <li><a href="https://iconscout.com/illustrations/doctor" target="_blank">Doctor
-                      Illustration</a> by <a href="https://iconscout.com/contributors/manypixels-gallery"
-                                             target="_blank">Manypixels Gallery</a></li>
-                    <li><a href="/polityka-prywatnosci" target="_blank">Polityka prywatności</a></li>
                   </ul>
                 </div>
               </div>
-              {/* <div className="col-lg-2 col-sm-4 col-6 offset-lg-1 col-margin">
-                <div className="single-footer">
-                  <div className="footer-title">
-                    <h6>Help Menu</h6>
-                  </div>
-                  <ul className="footer-list">
-                    <li><a href="">About</a></li>
-                    <li><a href="">Features</a></li>
-                    <li><a href="">Works</a></li>
-                    <li><a href="">Career</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div className="col-lg-2 col-sm-4 col-6 col-margin">
-                <div className="single-footer">
-                  <div className="footer-title">
-                    <h6>Support</h6>
-                  </div>
-                  <ul className="footer-list">
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Help & Support</a></li>
-                    <li><a href="">Privacy Policy</a></li>
-                    <li><a href="">Terms & Conditions</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div className="col-lg-2 col-sm-4 col-margin">
-                <div className="single-footer">
-                  <div className="footer-title">
-                    <h6>Products</h6>
-                  </div>
-                  <ul className="footer-list">
-                    <li><a href=""> Shades Pro</a></li>
-                    <li><a href="">Essential Blocks</a></li>
-                    <li><a href="">Avasta Dash</a></li>
-                    <li><a href="">vApp Landing Page</a></li>
-                  </ul>
-                </div>
-              </div> */}
             </div>
           </div>
         </div>
