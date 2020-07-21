@@ -24,6 +24,7 @@ const SearchForm = (props) => {
 
   const onSubmit = event => {
     event.preventDefault();
+    console.log(value)
     if (value !== null)
       navigateToTerm(value.name);
   }
@@ -36,7 +37,7 @@ const SearchForm = (props) => {
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({ "form-name": "search", "term": value })
+        body: encode({ "form-name": "search", "term": value.name })
       })
         .then(() => alert("Success!"))
         .catch(error => alert(error));
