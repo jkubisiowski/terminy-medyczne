@@ -171,27 +171,27 @@ function Layout(props) {
                 <div className="content-left-content">
                   <h2>Małgorzata Łukaszewicz</h2>
                   <p>
-                    Lekarz, obecnie w trakcie stażu podyplomowego. Ukończyła I Wydział Lekarski Warszawskiego
-                    Uniwersytetu Medycznego.
+                  Lekarka stażystka w Uniwersyteckim Centrum Klinicznym WUM. 
+                  Ukończyła I Wydział Lekarski Warszawskiego Uniwersytetu Medycznego. 
                   </p>
                   <ul className="content-list">
                     <li>
-                      <span><i className="icon icon-check-2"></i></span>Przewodnicząca Studenckiego Koła Informatyki
-                      Medycznej i Telemedycyny w latach 2017-2019
+                      <span><i className="icon icon-check-2"></i></span>Specjalista ds. Digital Marketingu w branży farmaceutycznej oraz wyrobów medycznych
                     </li>
                     <li>
-                      <span><i className="icon icon-check-2"></i></span>Wolontariusz w Zakładzie Informatyki Medycznej i
-                      Telemedycyny Warszawskiego Uniwersytetu Medycznego
+                      <span><i className="icon icon-check-2"></i></span>Doświadczenie jako Konsultant Medyczny w agencji marketingowej
                     </li>
                     <li>
-                      <span><i className="icon icon-check-2"></i></span>Od 2016 r. zajmuje się Digital Marketingiem w
-                      branży farmaceutycznej oraz wyrobów medycznych.
+                      <span><i className="icon icon-check-2"></i></span>Autorka fakultetu Medycyna Przyszłości prowadzonego w Zakładzie Informatyki Medycznej i Telemedycyny WUM
+                    </li>
+                    <li>
+                      <span><i className="icon icon-check-2"></i></span>Prelegentka na konferencjach oraz warsztatach związanych z telemedycyną i wykorzystaniem nowych technologii w medycynie
                     </li>
                   </ul>
                   <p>
-                    Wierzy, że innowacje pomogą poprawić komfort i skuteczność leczenia, dlatego chce je wykorzystywać w
-                    pracy lekarza.
+                  Innowacje pomagają poprawić komfort i skuteczność leczenia, dlatego chcę je tworzyć oraz wykorzystywać w pracy lekarza. 
                   </p>
+                  <p><b><i>Pacjent, który lepiej rozumie swoją chorobę, łatwiej przechodzi proces leczenia i uzyskuje lepsze efekty zdrowotne. </i></b></p>
                 </div>
               </div>
             </div>
@@ -251,7 +251,7 @@ function Layout(props) {
                     Chętnie na nie odpowiemy!
                   </p>
                   <p>
-                    Napisz do nas<br/>
+                    Napisz do nas:<br/>
                     <a href="mailto:kontakt@terminymedyczne.pl">kontakt@terminymedyczne.pl</a>
                     <a href="mailto:malgorzata@terminymedyczne.pl">malgorzata@terminymedyczne.pl</a>
                     <a href="mailto:konrad@terminymedyczne.pl">konrad@terminymedyczne.pl</a>
