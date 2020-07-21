@@ -43,7 +43,7 @@ const SearchForm = (props) => {
       headers: {"Content-Type": "application/x-www-form-urlencoded"},
       body: encode({"form-name": "search", "term": value.name})
     })
-      .then(() => window.location.href = "/not-found")
+      .then(() => window.location.href = "/nie-znaleziono")
       .catch(error => console.log(error));
   }
 
