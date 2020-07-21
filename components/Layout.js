@@ -465,7 +465,7 @@ function Layout(props) {
                   </div>
                   <ul className="footer-list">
                     <li><a href="polityka-prywatnosci" target="_blank">Polityka prywatności</a></li>
-                    <li><a href="">Regulamin serwisu</a></li>
+                    <li><a href="regulamin-serwisu" target="_blank">Regulamin serwisu</a></li>
                   </ul>
                 </div>
               </div>
