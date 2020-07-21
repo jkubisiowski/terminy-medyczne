@@ -1,6 +1,20 @@
 import Head from "next/head";
+import {useEffect, useState} from "react";
 
 function Layout(props) {
+  const [navigation, setNavigation] = useState(null);
+
+  useEffect(() => {
+    let navigationElement = $(navigation)
+    navigationElement.meanmenu({
+      meanScreenWidth: "992",
+      meanMenuContainer: '.mobile-menu',
+      meanMenuClose: "<i class='icon icon-simple-remove'></i>",
+      meanMenuOpen: "<i class='icon icon-menu-34'></i>",
+      meanExpand: "",
+    });
+
+  });
   return (
     <>
       <Head>
@@ -40,18 +54,8 @@ function Layout(props) {
                   <a href="/"><img src="/image/main-logo.png" alt=""/></a>
                 </div>
               </div>
-              {/* <div className="col-sm-8 col-lg-3 col-xl-3 d-none d-sm-block order-lg-3">
-                <div className="header-btns">
-                  <div className="btn-1">
-                    <a href="#">Sign In</a>
-                  </div>
-                  <div className="btn-2">
-                    <a href="/">Szukaj</a>
-                  </div>
-                </div>
-              </div> */}
               <div className="col-sm-1 col-6 col-lg-7 col-xl-6 offset-xl-1 position-static order-lg-2">
-                <div className="main-navigation">
+                <div className="main-navigation" ref={el => setNavigation(el)}>
                   <ul className="main-menu">
                     <li className="menu-item"><a href="/">Sprawdź termin</a></li>
                     <li className="menu-item"><a href="#about-us">O nas</a></li>
@@ -147,7 +151,7 @@ function Layout(props) {
                       <span><i className="icon icon-check-2"></i></span>Tłumacz specjalistycznych tekstów medycznych z języka angielskiego i niemieckiego
                     </li>
                     <li>
-                      <span><i className="icon icon-check-2"></i></span>Laureat teleturnieju “Milionerzy”	
+                      <span><i className="icon icon-check-2"></i></span>Laureat teleturnieju “Milionerzy”
                     </li>
                   </ul>
                   <p>
@@ -171,8 +175,8 @@ function Layout(props) {
                 <div className="content-left-content">
                   <h2>Małgorzata Łukaszewicz</h2>
                   <p>
-                  Lekarka stażystka w Uniwersyteckim Centrum Klinicznym WUM. 
-                  Ukończyła I Wydział Lekarski Warszawskiego Uniwersytetu Medycznego. 
+                  Lekarka stażystka w Uniwersyteckim Centrum Klinicznym WUM.
+                  Ukończyła I Wydział Lekarski Warszawskiego Uniwersytetu Medycznego.
                   </p>
                   <ul className="content-list">
                     <li>
@@ -189,7 +193,7 @@ function Layout(props) {
                     </li>
                   </ul>
                   <p>
-                  Innowacje pomagają poprawić komfort i skuteczność leczenia, dlatego chcę je tworzyć oraz wykorzystywać w pracy lekarza. 
+                  Innowacje pomagają poprawić komfort i skuteczność leczenia, dlatego chcę je tworzyć oraz wykorzystywać w pracy lekarza.
                   </p>
                   <p><b><i>Pacjent, który lepiej rozumie swoją chorobę, łatwiej przechodzi proces leczenia i uzyskuje lepsze efekty zdrowotne. </i></b></p>
                 </div>
@@ -502,7 +506,6 @@ function Layout(props) {
       <script src="/plugins/jquery/jquery-migrate.min.js"></script>
       <script src="/plugins/bootstrap-4.3.1/js/bootstrap.bundle.js"></script>
       <script src="/plugins/meanmenu/jquery.meanmenu.js"></script>
-      <script src="/js/active.js"></script>
     </>
   )
 }
