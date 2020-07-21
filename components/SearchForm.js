@@ -27,8 +27,14 @@ const SearchForm = (props) => {
 
   const onSubmit = event => {
     event.preventDefault();
-    if (value !== null)
-      handleSearchTerm(value.name);
+    if (value !== null) {
+      const found = terms.find(x => x.name.toLowerCase() === value.name.toLowerCase());
+      if (found) {
+        navigateToTerm(found)
+      } else {
+        submitMissingTerm()
+      }
+    }
   }
 
   const submitMissingTerm = () => {
@@ -43,16 +49,6 @@ const SearchForm = (props) => {
 
   const navigateToTerm = found => {
     window.location.href = "/terminy/" + found.slug.current;
-  }
-
-  const handleSearchTerm = (selectedTerm) => {
-
-    const found = terms.find(x => x.name.toLowerCase() === selectedTerm.toLowerCase());
-    if (found) {
-      navigateToTerm(found)
-    } else {
-      submitMissingTerm()
-    }
   }
 
   return (
