@@ -17,6 +17,11 @@ function Layout(props) {
         <link rel="stylesheet" href="/css/style.css"/>
         {process.env.NODE_ENV === 'production' && (
           <>
+            <script id="mcjs"
+              dangerouslySetInnerHTML={{
+                __html: `!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/2754d6c462eeb3e54d2f33073/206ba6fc47eb8ad6d7867699d.js");`,
+              }}
+            />
             <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172432228-1"></script>
             <script
               dangerouslySetInnerHTML={{
