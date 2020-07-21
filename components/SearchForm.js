@@ -11,7 +11,7 @@ const SearchForm = (props) => {
 
   useEffect(() => {
     client.fetch(groq`*[_type == "term"]`)
-      .then(data=>{
+      .then(data => {
         setTerms(data)
       })
   }, [])
@@ -36,8 +36,8 @@ const SearchForm = (props) => {
     } else {
       fetch("/", {
         method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({ "form-name": "search", "term": value.name })
+        headers: {"Content-Type": "application/x-www-form-urlencoded"},
+        body: encode({"form-name": "search", "term": value.name})
       })
         .then(() => alert("Success!"))
         .catch(error => alert(error));
@@ -45,8 +45,12 @@ const SearchForm = (props) => {
   }
 
   return (
-    <form className="SearchForm" onSubmit={onSubmit}>
-      <div className="">
+    <>
+      <form name="search" netlify="true" netlify-honeypot="bot-field" hidden>
+        <input type="text" name="term" />
+      </form>
+      <form className="SearchForm" onSubmit={onSubmit}>
+        <div className="">
           <Autocomplete
             value={value}
             onChange={(event, newValue) => {
@@ -84,13 +88,15 @@ const SearchForm = (props) => {
                 label="Wpisz termin lub skrót medyczny"
                 variant="outlined"
                 InputProps={{...params.InputProps, type: 'search'}}
+                name="term"
               />
             )}
           />
-        <button type="submit" className="search-form-submit">Szukaj</button>
-      </div>
+          <button type="submit" className="search-form-submit">Szukaj</button>
+        </div>
 
-    </form>
+      </form>
+    </>
 
   )
 }
