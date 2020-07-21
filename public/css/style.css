@@ -403,7 +403,7 @@
   margin-bottom: 0px;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 300px) {
   .hero-form {
     padding-top: 15px;
   }
