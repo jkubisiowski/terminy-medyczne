@@ -27,8 +27,6 @@ const SearchForm = (props) => {
 
   const onSubmit = event => {
     event.preventDefault();
-    console.log(event.target)
-    console.log(value)
     if (value !== null)
       handleSearchTerm(value.name);
   }
@@ -39,7 +37,7 @@ const SearchForm = (props) => {
       headers: {"Content-Type": "application/x-www-form-urlencoded"},
       body: encode({"form-name": "search", "term": value.name})
     })
-      .then(() => alert("Brak hasła w bazie - zostaliśmy poinformowani o brakującym tłumaczeniu"))
+      .then(() => window.location.href = "/not-found")
       .catch(error => console.log(error));
   }
 
