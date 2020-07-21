@@ -1,4 +1,3 @@
-import Layout from "../components/Layout";
 import groq from "groq";
 import {useEffect, useState} from "react";
 import client from "../client";
