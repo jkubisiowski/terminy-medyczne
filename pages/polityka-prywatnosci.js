@@ -1,16 +1,18 @@
-import groq from "groq";
-import {useEffect, useState} from "react";
-import client from "../client";
+import Head from "next/head";
+import Header from "../components/Header";
 
 const Policy = () => {
   return (
-      <section className="hero-area term">
-        <div className="container">
-          <div className="section-title text-center">
+      <>
+      <Header></Header>
+        <div className="container policy">
+        <div className="section-title text-center">
             <h2>Polityka prywatności</h2>
           </div>
           <div>
+            <div className="mb--30">
             <h4>Drogi Użytkowniku!</h4>
+            </div>
             <p><b>Czego dotyczy niniejsza polityka prywatności?</b>
             <br></br>
             Przeglądając stronę internetową www.terminymedyczne.pl, jesteś jej Użytkownikiem. Chcemy, abyś w czasie korzystania z naszej strony internetowej czuł się bezpiecznie i nie musiał obawiać się o swoją prywatność. Dlatego też stworzyliśmy niniejszą politykę prywatności. Wyjaśnia ona, w jaki sposób właściciele strony wykorzystują i przetwarzają dane osobowe, które zbieramy od Ciebie podczas korzystania z naszej strony internetowej.</p>
@@ -72,7 +74,7 @@ const Policy = () => {
                     <li>podmiotom, które zażądają przekazanie tych danych, opierając się na odpowiednich przepisach prawa.</li>
                 </ul>
             </p>
-            <h4>Przekazujemy podmiotom zewnętrznym zanonimizowane pliki cookie celem poprawy funkcjonowania serwisu i zwiększenia jego atrakcyjności.</h4>
+            <h6>Przekazujemy podmiotom zewnętrznym zanonimizowane pliki cookie celem poprawy funkcjonowania serwisu i zwiększenia jego atrakcyjności.</h6>
             <p>Stosujemy analizę statystyczną ruchu na stronie poprzez Google Analytics (Google Inc. z siedzibą w USA). Nie przekazujemy do operatora tej usługi danych osobowych, a jedynie zanonimizowane informacje. Usługa bazuje na wykorzystaniu ciasteczek w urządzeniu końcowym użytkownika.
             <br></br>
             <b>Szczegółowe informacje o zakresie i zasadach zbierania danych w związku z tą usługą można znaleźć pod linkiem: </b><a href="https://www.google.com/intl/pl/policies/privacy/partners" target="_blank">https://www.google.com/intl/pl/policies/privacy/partners</a></p>
@@ -82,7 +84,7 @@ const Policy = () => {
              <br></br>
              <b>Stosujemy rozwiązanie automatyzujące działanie Portalu w odniesieniu do Użytkowników, np. mogące przesłać maila do Ciebie, o ile wyraziłeś zgodę na otrzymywanie newslettera.</b>
             </p>
-            <h4>Administrator przetwarza dane osobowe Użytkowników odwiedzających profile Administratora prowadzone w mediach społecznościowych (Facebook, Instagram). Dane te są przetwarzane wyłącznie w związku z prowadzeniem profilu, w tym w celu informowania Użytkowników o aktywności Administratora oraz promowaniu różnego rodzaju wydarzeń, usług oraz produktów. </h4>
+            <h6>Administrator przetwarza dane osobowe Użytkowników odwiedzających profile Administratora prowadzone w mediach społecznościowych (Facebook, Instagram). Dane te są przetwarzane wyłącznie w związku z prowadzeniem profilu, w tym w celu informowania Użytkowników o aktywności Administratora oraz promowaniu różnego rodzaju wydarzeń, usług oraz produktów. </h6>
             <p>Masz prawo zgłoszenia sprzeciwu wobec przetwarzania jego danych osobowych w celach marketingowych, np. do zaprzestania wysyłania Ci newslettera – w tym celu kliknij tutaj.</p>
             <p><b>Jakie masz prawa do ochrony danych? </b>
             <br></br>
@@ -115,7 +117,8 @@ const Policy = () => {
             Dane otrzymane na drodze korespondencji/reklamacji są przetwarzane przez czas niezbędny do satysfakcjonującego zakończenia korespondencji/rozpatrzenia reklamacji, a następnie są archiwizowane, w razie konieczności obrony przed ewentualnymi roszczeniami wobec właścicieli Portalu. 
             <br></br>
             Dane statystyczne i analityczne są przetwarzane w ramach bieżących działań Administratora, lecz nie dłużej niż przez 60 dni od otrzymania informacji. Po tym czasie Administrator może dalej przetwarzać ogólne dane statystyczne, które będą pozbawione jakichkolwiek informacji dotyczących poszczególnych użytkowników.</b>
-            <br></br>
+            </p>
+            <p>
             Okres dostępności danych statystycznych w narzędziach Google Analytics, MailChimp dostarczanych przez zewnętrznych dostawców rozwiązań analitycznych może być dłuższy niż 60 dni, i pozostaje to poza zakresem decyzyjnym Administratora.
             Inne dane osobowe przechowywane są przez okres niezbędny do realizacji celu, w którym zostały zebrane.
             Po upływie okresu przetwarzania dane są nieodwracalnie usuwane lub anonimizowane.
@@ -133,7 +136,7 @@ Niniejsza polityka prywatności została ostatnio zaktualizowana w dniu 31 lipca
             Jeżeli chcesz zgłosić skargę lub uważasz, że nie odnieśliśmy się do Twojego problemu w zadowalający sposób, możesz skontaktować się z Prezesem Urzędu Ochrony Danych Osobowych, dostępnym korespondencyjnie: ul. Stawki 2, 00-193 Warszawa, lub poprzez elektroniczną skrzynkę podawczą dostępną na stronie: <a href="https://www.uodo.gov.pl/pl/p/kontakt" target="_blank">https://www.uodo.gov.pl/pl/p/kontakt</a>, jak również telefonicznie pod numerem (22) 531 03 00.</p>
             </div>
         </div>
-      </section>
+        </>
   )
 }
 

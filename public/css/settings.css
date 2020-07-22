@@ -101,6 +101,10 @@ ul {
   margin: 0;
 }
 
+.policy ul {
+  list-style: disc;
+}
+
 img {
   max-width: 100%;
 }

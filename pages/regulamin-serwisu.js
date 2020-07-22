@@ -1,10 +1,8 @@
-import groq from "groq";
-import {useEffect, useState} from "react";
-import client from "../client";
+import Header from "../components/Header";
 
-const Regulamin = () => {
-  return (
-      <section className="hero-area term">
+const Regulamin = (props) => {
+  return (<>
+      <Header></Header>
         <div className="container">
           <div className="section-title text-center">
             <h2>Regulamin Portalu TerminyMedyczne.pl</h2>
@@ -55,7 +53,7 @@ const Regulamin = () => {
             <p>Copyright © 2020 Konrad Janik i Małgorzata Łukaszewicz</p>
         </div>
         </div>
-      </section>
+        </>
   )
 }
 
