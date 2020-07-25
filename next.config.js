@@ -1,7 +1,7 @@
 const client = require('./client')
 
 module.exports = {
-  generateEtags: false,
+  generateEtags: true,
   exportPathMap: async function (defaultPathMap) {
     const pathsTerms = await client
       .fetch('*[_type == "term" && defined(slug)].slug.current')
