@@ -12,7 +12,7 @@ const CategoryPage = (props) => {
   const slug = router.query.slug || []
 
   useEffect(() => {
-    client.fetch(query, {slug: slug[0]})
+    client.fetch(query, {slug: slug})
       .then(data => {
         setCategory(data)
       })
