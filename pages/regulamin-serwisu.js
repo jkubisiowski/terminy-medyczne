@@ -1,15 +1,17 @@
+import Head from "next/head";
 import Header from "../components/Header";
 
-const Regulamin = (props) => {
+const Regulamin = () => {
   return (<>
       <Header></Header>
-        <div className="container">
+        <div className="container policy">
           <div className="section-title text-center">
             <h2>Regulamin Portalu TerminyMedyczne.pl</h2>
           </div>
           <div>
             <p>Data ostatniej aktualizacji: 20.07.2020</p>
-            <h4>Postanowienia ogólne</h4>
+            <h5>Postanowienia ogólne</h5>
+            <p>
             <ul>
                 <li>Niniejszy Regulamin określa zasady korzystania z usług portalu internetowego TerminyMedyczne.pl, zwanego dalej Portalem.</li>
                 <li>Użytkownikiem Portalu (zwanym dalej „Użytkownikiem”) jest każda osoba korzystająca ze strony internetowej www.TerminyMedyczne.pl</li>
@@ -27,7 +29,9 @@ const Regulamin = (props) => {
                 <li>Przed rozpoczęciem korzystania z Usług serwisu TerminyMedyczne.pl Użytkownik zobowiązany jest do zapoznania się z niniejszym Regulaminem.</li>
                 <li>Niniejszy Regulamin jest udostępniany Użytkownikowi przed realizacją Usług.</li>
             </ul>
-            <h4>Zastrzeżenia, zapewnienia, wyłączenie odpowiedzialności</h4>
+            </p>
+            <h5>Zastrzeżenia, zapewnienia, wyłączenie odpowiedzialności</h5>
+            <p>
             <ul>
                 <li>Właściciele Portalu są właścicielami praw autorskich do wszelkich treści o charakterze edukacyjnym udostępnionych w Portalu.</li>
                 <li>Wszystkie treści publikowane na stronie są chronione prawem autorskim na podstawie Ustawy z dnia 4 lutego 1994 r. o prawie autorskim i prawach pokrewnych.</li>
@@ -37,20 +41,29 @@ const Regulamin = (props) => {
                 <li>Treści zamieszczone na Portalu mają wartość edukacyjną. Treści te nie stanowią ani nie zastępują porady lekarskiej. Nie stanowią ani nie zastępują również opinii, orzeczenia lub informacji o stanie zdrowia określonego pacjenta w rozumieniu Ustawy z dnia 5 grudnia 1996 r. o zawodach lekarza i lekarza dentysty. Nie należy na ich podstawie podejmować decyzji terapeutycznych</li>
                 <li>Właściciele serwisu nie ponoszą odpowiedzialności za decyzje oraz poniesione przez użytkowników szkody. Wszelkie roszczenia prawne wobec Właścicieli Portalu dotyczące ewentualnych szkód wynikających z nieprawidłowego korzystania z Portalu są wykluczone.</li>
             </ul>
-            <h4>Udostępnianie linku do Portalu</h4>
+            </p>
+            <h5>Udostępnianie linku do Portalu</h5>
+            <p>
             <ul>
                 <li>Właściciele Portalu udostępniają bezpłatnie na życzenie odpowiednie teksty i grafiki w celu zintegrowania linku internetowego do strony głównej Portalu z innymi witrynami.</li>
             </ul>
-            <h4>Dane kontaktowe</h4>
+            </p>
+            <h5>Dane kontaktowe</h5>
+            <p>
             <ul>
                 <li>Właścicielem Portalu TerminyMedyczne.pl są osoby fizyczne: lek. Konrad Janik oraz lek. Małgorzata Łukaszewicz.</li>
                 <li>Wszelkie uwagi, reklamacje, komentarze (zwłaszcza do poprawności lub stopnia zrozumienia objaśnień), pytania lub nieprawidłowości związane z działaniem Portalu Użytkownik może kierować na adres e-mail: <a href="mailto:kontakt@terminymedyczne.pl">kontakt@terminymedyczne.pl</a>.</li>
             </ul>
-            <h4>Ochrona danych Użytkownika</h4>
+            </p>
+            <h5>Ochrona danych Użytkownika</h5>
+            <p>
             <ul>
                 <li>Informacje dotyczące ochrony danych Użytkownika znajdują się w Polityce Prywatności Portalu, która stanowi załącznik do niniejszego Regulaminu i której aktualna wersja jest dostępna na stronie: www.TerminyMedyczne.pl/polityka-prywatnosci</li>
             </ul>
+            </p>
+            <div className="text-center">
             <p>Copyright © 2020 Konrad Janik i Małgorzata Łukaszewicz</p>
+            </div>
         </div>
         </div>
         </>
