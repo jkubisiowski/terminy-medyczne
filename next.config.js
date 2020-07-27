@@ -11,7 +11,7 @@ module.exports = {
           (acc, slug) => ({
             '/': {page: '/'},
             ...acc,
-            [`/terminy/${slug}`]: {page: '/terminy/[slug]', query: {slug}}
+            [`/terminy/...${slug}`]: {page: '/terminy/[slug]', query: {slug}}
           }),
           defaultPathMap
         )
@@ -24,7 +24,7 @@ module.exports = {
           (acc, slug) => ({
             '/': {page: '/'},
             ...acc,
-            [`/kategorie/${slug}`]: {page: '/kategorie/[slug]', query: {slug}}
+            [`/kategorie/...${slug}`]: {page: '/kategorie/[slug]', query: {slug}}
           }),
           defaultPathMap
         )
