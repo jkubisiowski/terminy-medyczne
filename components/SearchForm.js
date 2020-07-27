@@ -32,19 +32,33 @@ const SearchForm = (props) => {
       if (found) {
         navigateToTerm(found)
       } else {
-        submitMissingTerm()
+        submitMissingTerm(event)
       }
     }
   }
 
-  const submitMissingTerm = () => {
-    fetch("/", {
-      method: "POST",
-      headers: {"Content-Type": "application/x-www-form-urlencoded"},
-      body: encode({"form-name": "search", "term": value.name})
-    })
-      .then(() => window.location.href = "/nie-znaleziono")
-      .catch(error => console.log(error));
+  const submitMissingTerm = (ev) => {
+    const form = ev.target;
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        window.location.href = "/nie-znaleziono"
+      } else {
+        console.log(xhr);
+      }
+    };
+    xhr.send(data);
+    // fetch("/", {
+    //   method: "POST",
+    //   headers: {"Content-Type": "application/x-www-form-urlencoded"},
+    //   body: encode({"form-name": "search", "term": value.name})
+    // })
+    //   .then(() => window.location.href = "/nie-znaleziono")
+    //   .catch(error => console.log(error));
   }
 
   const navigateToTerm = found => {
@@ -53,11 +67,8 @@ const SearchForm = (props) => {
 
   return (
     <>
-      <form name="search" netlify="true" netlify-honeypot="bot-field" hidden>
-        <input type="text" name="term"/>
-      </form>
       <NoSsr>
-        <form className="SearchForm" onSubmit={onSubmit}>
+        <form className="SearchForm" onSubmit={onSubmit} action="https://formspree.io/mpzykndz" method="POST">
           <div className="">
             <Autocomplete
               value={value}
