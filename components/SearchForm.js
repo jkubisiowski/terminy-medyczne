@@ -39,9 +39,10 @@ const SearchForm = (props) => {
 
   const submitMissingTerm = (ev) => {
     const form = ev.target;
-    const data = new FormData(form);
+    const data = new FormData();
+    data.append('term', value.name);
     const xhr = new XMLHttpRequest();
-    xhr.open(form.method, form.action);
+    xhr.open("POST", "https://formspree.io/mpzykndz");
     xhr.setRequestHeader("Accept", "application/json");
     xhr.onreadystatechange = () => {
       if (xhr.readyState !== XMLHttpRequest.DONE) return;
@@ -49,16 +50,10 @@ const SearchForm = (props) => {
         window.location.href = "/nie-znaleziono"
       } else {
         console.log(xhr);
+        window.location.href = "/nie-znaleziono"
       }
     };
     xhr.send(data);
-    // fetch("/", {
-    //   method: "POST",
-    //   headers: {"Content-Type": "application/x-www-form-urlencoded"},
-    //   body: encode({"form-name": "search", "term": value.name})
-    // })
-    //   .then(() => window.location.href = "/nie-znaleziono")
-    //   .catch(error => console.log(error));
   }
 
   const navigateToTerm = found => {
@@ -67,8 +62,8 @@ const SearchForm = (props) => {
 
   return (
     <>
-      <NoSsr>
-        <form className="SearchForm" onSubmit={onSubmit} action="https://formspree.io/mpzykndz" method="POST">
+      {/*<NoSsr>*/}
+        <form className="SearchForm" onSubmit={onSubmit}>
           <div className="">
             <Autocomplete
               value={value}
@@ -128,7 +123,7 @@ const SearchForm = (props) => {
             <button type="submit" className="search-form-submit">Szukaj</button>
           </div>
         </form>
-      </NoSsr>
+      {/*</NoSsr>*/}
     </>
 
   )
