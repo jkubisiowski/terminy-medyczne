@@ -5,7 +5,6 @@ module.exports = {
   ) {
     return {
       '/': { page: '/' },
-      '/about': { page: '/about' },
       '/terminy/[slug].js': { page: '/terminy/[slug]' }
     }
   },
