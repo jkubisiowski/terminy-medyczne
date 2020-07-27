@@ -20,7 +20,8 @@ const TermPage = (props) => {
   });
 
   useEffect(() => {
-    client.fetch(query, {slug: slug[0]})
+    console.log(slug)
+    client.fetch(query, {slug: slug})
       .then(data => {
         setTerm(data)
       })
