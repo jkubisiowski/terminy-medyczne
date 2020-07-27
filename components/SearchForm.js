@@ -62,7 +62,7 @@ const SearchForm = (props) => {
 
   return (
     <>
-      {/*<NoSsr>*/}
+      <NoSsr>
         <form className="SearchForm" onSubmit={onSubmit}>
           <div className="">
             <Autocomplete
@@ -123,7 +123,7 @@ const SearchForm = (props) => {
             <button type="submit" className="search-form-submit">Szukaj</button>
           </div>
         </form>
-      {/*</NoSsr>*/}
+      </NoSsr>
     </>
 
   )
