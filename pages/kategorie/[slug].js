@@ -2,14 +2,17 @@ import groq from 'groq'
 import client from '../../client'
 import Layout from "../../components/Layout";
 import {useEffect, useState} from "react";
+import {useRouter} from "next/router";
 
 const CategoryPage = (props) => {
   const [category, setCategory] = useState({
     terms: []
   });
+  const router = useRouter()
+  const slug = router.query.slug || []
 
   useEffect(() => {
-    client.fetch(query, {slug: props.slug})
+    client.fetch(query, {slug: slug})
       .then(data => {
         setCategory(data)
       })
@@ -28,7 +31,7 @@ const CategoryPage = (props) => {
               <div className="card-content">
               <a href={"/terminy/" + x.slug.current}>{x.name}</a>
             </div>
-            </div>  
+            </div>
             </div>))}
           </div>
         </div>

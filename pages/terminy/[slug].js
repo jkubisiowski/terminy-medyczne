@@ -4,8 +4,12 @@ import Layout from "../../components/Layout";
 import imageUrlBuilder from '@sanity/image-url'
 import BlockContent from '@sanity/block-content-to-react'
 import {useEffect, useState} from "react";
+import { useRouter } from 'next/router'
 
 const TermPage = (props) => {
+  const router = useRouter()
+  const slug = router.query.slug || []
+
   const [term, setTerm] = useState({
     body: [],
     name: null,
@@ -16,7 +20,7 @@ const TermPage = (props) => {
   });
 
   useEffect(() => {
-    client.fetch(query, {slug: props.slug})
+    client.fetch(query, {slug: slug})
       .then(data => {
         setTerm(data)
       })
