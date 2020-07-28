@@ -15,7 +15,7 @@ function Header(props) {
           <link rel="stylesheet" href="/fonts/fontawesome-5/css/all.min.css"/>
           <link rel="stylesheet" href="/css/settings.css"/>
           <link rel="stylesheet" href="/css/style.css"/>
-          {process.env.NODE_ENV !== 'production' && (
+          {process.env.NODE_ENV === 'production' && (
             <>
               <script id="mcjs"
               dangerouslySetInnerHTML={{
