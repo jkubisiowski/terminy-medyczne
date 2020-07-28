@@ -9,6 +9,7 @@ const Categories = () => {
   useEffect(() => {
     client.fetch(query)
       .then(data => {
+        console.log(data)
         setCategories(data)
       })
   }, [])
@@ -22,8 +23,7 @@ const Categories = () => {
           </div>
           <div className="row">
           {categories.map(x =>
-            (<div key={x.title} className="col-sm-12 col-md-6 col-lg-3 mb--30">
-
+            (x.slug && <div key={x.title} className="col-sm-12 col-md-6 col-lg-3 mb--30">
                 <div className="feature-card">
                   <div className="card-content">
                     <h4>{x.title}</h4>

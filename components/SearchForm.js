@@ -29,7 +29,7 @@ const SearchForm = (props) => {
     event.preventDefault();
     if (value !== null) {
       const found = terms.find(x => x.name.toLowerCase() === value.name.toLowerCase());
-      if (found) {
+      if (found && found.slug) {
         navigateToTerm(found)
       } else {
         submitMissingTerm(event)
