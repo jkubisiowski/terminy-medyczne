@@ -35,7 +35,7 @@ function Header(props) {
                 `,
                 }}
               />
-              <script src="https://cdn.wpcc.io/lib/1.0.2/cookieconsent.min.js"></script>
+              <script async src="https://cdn.wpcc.io/lib/1.0.2/cookieconsent.min.js"></script>
               <script
                 dangerouslySetInnerHTML={{
                   __html: `
