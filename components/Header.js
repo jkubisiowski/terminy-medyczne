@@ -15,7 +15,8 @@ function Header(props) {
           <link rel="stylesheet" href="/fonts/fontawesome-5/css/all.min.css"/>
           <link rel="stylesheet" href="/css/settings.css"/>
           <link rel="stylesheet" href="/css/style.css"/>
-          {process.env.NODE_ENV === 'production' && (
+          <link rel="stylesheet" type="text/css" href="https://cdn.wpcc.io/lib/1.0.2/cookieconsent.min.css"/>
+          {process.env.NODE_ENV !== 'production' && (
             <>
               <script id="mcjs"
               dangerouslySetInnerHTML={{
@@ -31,6 +32,14 @@ function Header(props) {
             gtag('js', new Date());
   
             gtag('config', 'UA-172432228-1');
+                `,
+                }}
+              />
+              <script src="https://cdn.wpcc.io/lib/1.0.2/cookieconsent.min.js"></script>
+              <script
+                dangerouslySetInnerHTML={{
+                  __html: `
+                  window.addEventListener("load", function(){window.wpcc.init({"border":"thin","corners":"small","colors":{"popup":{"background":"#f8f8f8","text":"#000000","border":"#1290a4"},"button":{"background":"#1290a4","text":"#ffffff"}},"position":"top","content":{"href":"https://terminymedyczne.pl/polityka-prywatnosci","button":"Zgadzam się","link":"Czytaj więcej...","message":"W ramach witryny stosujemy pliki cookies. W każdej chwili można dokonać zmiany ustawień dotyczących cookies w swojej przeglądarce. "}})});
                 `,
                 }}
               />
