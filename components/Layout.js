@@ -1,11 +1,10 @@
-import Head from "next/head";
-import Header from "../components/Header";
+import TMHead from "./TMHead";
 import {Nav, Navbar, NavDropdown} from "react-bootstrap";
 
 function Layout(props) {
   return (
     <>
-      <Header></Header>
+      <TMHead></TMHead>
       <div className="site-wrapper">
         <header className="site-header">
           <div className="container">

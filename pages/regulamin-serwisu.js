@@ -1,9 +1,9 @@
 import Head from "next/head";
-import Header from "../components/Header";
+import TMHead from "../components/TMHead";
 
 const Regulamin = () => {
   return (<>
-      <Header></Header>
+      <TMHead></TMHead>
         <div className="container policy">
           <div className="section-title text-center">
             <h2>Regulamin Portalu TerminyMedyczne.pl</h2>

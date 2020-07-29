@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-function Header(props) {
+function TMHead(props) {
   return (
     <>
       <Head>
@@ -48,4 +48,4 @@ function Header(props) {
   )
 }
 
-export default Header
+export default TMHead

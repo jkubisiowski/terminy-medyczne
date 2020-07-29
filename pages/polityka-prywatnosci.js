@@ -1,10 +1,10 @@
 import Head from "next/head";
-import Header from "../components/Header";
+import TMHead from "../components/TMHead";
 
 const Policy = () => {
   return (
       <>
-      <Header></Header>
+      <TMHead></TMHead>
         <div className="container policy">
         <div className="section-title text-center">
             <h2>Polityka prywatności</h2>
@@ -21,7 +21,7 @@ const Policy = () => {
             <br></br>
             Administratorem danych osobowych jest twórca Portalu, lek. Konrad Adam Janik, osoba fizyczna, zamieszkały pod adresem: ul. Lea 5/10, 30-046 Kraków (zwany dalej Administratorem). Z Administratorem możesz skontaktować się za pośrednictwem poczty tradycyjnej lub poczty elektronicznej na adres: <a href="mailto:kontakt@terminymedyczne.pl">kontakt@terminymedyczne.pl</a>.
             <br></br>
-            Jeśli masz jakiekolwiek pytania dotyczące polityki prywatności naszej firmy, danych, które posiadamy na Twój temat lub chcesz skorzystać z jednego z przysługujących Ci praw do ochrony danych, skontaktuj się z Administratorem danych osobowych za pośrednictwem poczty tradycyjnej lub poczty elektronicznej na adres: <a href="mailto:kontakt@terminymedyczne.pl">kontakt@terminymedyczne.pl</a>. 
+            Jeśli masz jakiekolwiek pytania dotyczące polityki prywatności naszej firmy, danych, które posiadamy na Twój temat lub chcesz skorzystać z jednego z przysługujących Ci praw do ochrony danych, skontaktuj się z Administratorem danych osobowych za pośrednictwem poczty tradycyjnej lub poczty elektronicznej na adres: <a href="mailto:kontakt@terminymedyczne.pl">kontakt@terminymedyczne.pl</a>.
             </p>
             <p><b>W jakim celu i jak zbieramy i przetwarzamy dane osobowe?</b>
             <br></br>
@@ -88,7 +88,7 @@ const Policy = () => {
             <p>Masz prawo zgłoszenia sprzeciwu wobec przetwarzania jego danych osobowych w celach marketingowych, np. do zaprzestania wysyłania Ci newslettera – w tym celu kliknij tutaj.</p>
             <p><b>Jakie masz prawa do ochrony danych? </b>
             <br></br>
-            Chcielibyśmy mieć pewność, że jesteś w pełni świadomy/a wszystkich swoich praw do ochrony danych. Jako użytkownik naszego Portalu masz prawo do: 
+            Chcielibyśmy mieć pewność, że jesteś w pełni świadomy/a wszystkich swoich praw do ochrony danych. Jako użytkownik naszego Portalu masz prawo do:
                 <ul>
                     <li>dostępu do danych osobowych - masz prawo zażądać od Administratora potwierdzenia, czy przetwarzane są Twoje dane osobowe, oraz do uzyskania dostępu do tych danych.</li>
                     <li>otrzymania kopii danych – uzyskania kopii Twoich danych podlegających przetwarzaniu, przy czym pierwsza kopia jest bezpłatna. Za kolejne kopie Administrator może nałożyć opłatę wynikającą z kosztów administracyjnych. </li>
@@ -114,7 +114,7 @@ const Policy = () => {
             </p>
             <p><b>Dane podane w celu realizacji usługi newslettera są przechowywane do czasu zakończenia usługi realizacji newslettera, np. w przypadku wycofania zgody na jego wysyłkę.
             <br></br>
-            Dane otrzymane na drodze korespondencji/reklamacji są przetwarzane przez czas niezbędny do satysfakcjonującego zakończenia korespondencji/rozpatrzenia reklamacji, a następnie są archiwizowane, w razie konieczności obrony przed ewentualnymi roszczeniami wobec właścicieli Portalu. 
+            Dane otrzymane na drodze korespondencji/reklamacji są przetwarzane przez czas niezbędny do satysfakcjonującego zakończenia korespondencji/rozpatrzenia reklamacji, a następnie są archiwizowane, w razie konieczności obrony przed ewentualnymi roszczeniami wobec właścicieli Portalu.
             <br></br>
             Dane statystyczne i analityczne są przetwarzane w ramach bieżących działań Administratora, lecz nie dłużej niż przez 60 dni od otrzymania informacji. Po tym czasie Administrator może dalej przetwarzać ogólne dane statystyczne, które będą pozbawione jakichkolwiek informacji dotyczących poszczególnych użytkowników.</b>
             </p>
@@ -129,7 +129,7 @@ const Policy = () => {
             </p>
             <p><b>Jak zmienia się nasza Polityka prywatności?</b>
             <br></br>
-            Administrator regularnie sprawdza politykę prywatności Portalu i zgodnie z bieżącymi potrzebami i regulacjami prawnymi umieszcza wszelkie aktualizacje na stronie internetowej: <a href="https://terminymedyczne.pl/polityka-prywatnosci" target="_blank">www.terminymedyczne.pl/polityka-prywatnosci</a>. 
+            Administrator regularnie sprawdza politykę prywatności Portalu i zgodnie z bieżącymi potrzebami i regulacjami prawnymi umieszcza wszelkie aktualizacje na stronie internetowej: <a href="https://terminymedyczne.pl/polityka-prywatnosci" target="_blank">www.terminymedyczne.pl/polityka-prywatnosci</a>.
 Niniejsza polityka prywatności została ostatnio zaktualizowana w dniu 31 lipca 2020 r.</p>
             <p><b>Jak skontaktować się z organem ochrony danych?</b>
             <br></br>
