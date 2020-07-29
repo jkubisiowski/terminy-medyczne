@@ -53,7 +53,7 @@ function Layout(props) {
             </div> */}
 
           <div className="row margin-decrese">
-            <div className="col-lg-2 col-sm-4 col-6 col-margin">
+            <div className="col-lg-3 col-sm-4 col-6 col-margin">
               <div className="single-footer">
                 <div className="footer-title">
                   <h6>Menu</h6>
@@ -67,7 +67,7 @@ function Layout(props) {
                 </ul>
               </div>
             </div>
-            <div className="col-lg-2 col-sm-4 col-6 col-margin">
+            <div className="col-lg-3 col-sm-4 col-6 col-margin">
               <div className="single-footer">
                 <div className="footer-title">
                   <h6>Linki</h6>
@@ -86,7 +86,7 @@ function Layout(props) {
                 </ul>
               </div>
             </div>
-            <div className="col-lg-2 col-sm-4 col-6 col-margin">
+            <div className="col-lg-3 col-sm-4 col-6 col-margin">
               <div className="single-footer">
                 <div className="footer-title">
                   <h6>Powered by</h6>
@@ -97,7 +97,7 @@ function Layout(props) {
                 </ul>
               </div>
             </div>
-            <div className="col-lg-2 col-sm-4 col-6 col-margin">
+            <div className="col-lg-3 col-sm-4 col-6 col-margin">
               <div className="single-footer">
                 <div className="footer-title">
                   <h6>Copyright</h6>
@@ -108,12 +108,6 @@ function Layout(props) {
                     Illustration</a> by <a href="https://iconscout.com/contributors/manypixels-gallery"
                                            target="_blank">Manypixels Gallery</a></li>
                 </ul>
-              </div>
-            </div>
-            <div className="col-lg-2 col-sm-4 col-6 col-margin">
-              <div className="single-footer">
-                <div className="footer-title"></div>
-
               </div>
             </div>
           </div>
