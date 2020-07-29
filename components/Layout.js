@@ -280,8 +280,8 @@ function Layout(props) {
                         <i className="icon icon-logo-instagram"></i>
                       </a>
                     </li>
-                    <li><a href="polityka-prywatnosci">Polityka prywatności</a></li>
-                    <li><a href="regulamin-serwisu">Regulamin serwisu</a></li>
+                    <li><a href="/polityka-prywatnosci">Polityka prywatności</a></li>
+                    <li><a href="/regulamin-serwisu">Regulamin serwisu</a></li>
                   </ul>
                 </div>
               </div>
