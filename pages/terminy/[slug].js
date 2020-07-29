@@ -3,6 +3,7 @@ import client from '../../client'
 import Layout from "../../components/Layout";
 import imageUrlBuilder from '@sanity/image-url'
 import BlockContent from '@sanity/block-content-to-react'
+import MainContent from "../../components/MainContent";
 
 const TermPage = (props) => {
   return (
@@ -48,6 +49,7 @@ const TermPage = (props) => {
           </div>
         </div>
       </section>
+      <MainContent/>
     </Layout>
   )
 }

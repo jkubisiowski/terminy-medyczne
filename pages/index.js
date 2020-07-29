@@ -1,5 +1,6 @@
 import Layout from "../components/Layout";
 import SearchForm from "../components/SearchForm";
+import MainContent from "../components/MainContent";
 
 const Index = (props) => {
   return (
@@ -25,6 +26,7 @@ const Index = (props) => {
           </div>
         </div>
       </section>
+      <MainContent/>
     </Layout>
   )
 }

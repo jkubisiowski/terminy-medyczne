@@ -1,4 +1,5 @@
 import Layout from "../components/Layout";
+import MainContent from "../components/MainContent";
 
 const NotFound = () => {
   return (
@@ -11,6 +12,7 @@ const NotFound = () => {
           </div>
         </div>
       </section>
+      <MainContent/>
     </Layout>
   )
 }

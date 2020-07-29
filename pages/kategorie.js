@@ -1,6 +1,7 @@
 import Layout from "../components/Layout";
 import groq from "groq";
 import client from "../client";
+import MainContent from "../components/MainContent";
 
 const Categories = (props) => {
   return (
@@ -26,6 +27,7 @@ const Categories = (props) => {
           </div>
         </div>
       </section>
+      <MainContent/>
     </Layout>
   )
 }
