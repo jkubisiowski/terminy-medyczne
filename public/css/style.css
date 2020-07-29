@@ -2,11 +2,19 @@
     Navigation
 //////////////////////////// */
 .navbar-logo {
-  width: 120px;
+  width: 160px;
+}
+
+.navbar-light .navbar-brand {
+  margin-right: 100px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-size: 16px;
+  color: #1f1f1f;
 }
 
 
-/*=== Media Query ===*/
 /* ///////////////////////////
     Header Area
 //////////////////////////// */
