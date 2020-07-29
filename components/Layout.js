@@ -28,29 +28,51 @@ function Layout(props) {
 
       <div className="footer-section">
         <div className="container">
-          {/* <div className="footer-newsletter-section">
-              <div className="row justify-content-center">
-                <div className="col-lg-10 col-xl-8">
-                  <div className="footer-newsletter-content">
-                    <h2>Zapisz się do newslettera</h2>
-                    <p>Dołącz do naszej listy mailingowej i bądź na bieżąco z najnowszymi ciekawostkami ze świata
-                      medycznego</p>
-                  </div>
+          <div className="footer-newsletter-section">
+            <div className="row justify-content-center">
+              <div className="col-lg-10 col-xl-8">
+                <div className="footer-newsletter-content">
+                  <h2>Zapisz się do newslettera</h2>
+                  <p>Dołącz do naszej listy mailingowej i bądź na bieżąco z najnowszymi ciekawostkami ze świata
+                    medycznego</p>
                 </div>
-                <div className="col-lg-7 col-xl-6">
-                  <div className="footer-newsletter-form">
-                    <form action="">
-                      <div className="form-group">
-                        <input type="text" className="form-control" placeholder="Wpisz adres email"/>
-                        <button className="submit-btn">Zapisz się</button>
+              </div>
+              <div className="col-lg-7 col-xl-6">
+                <div className="footer-newsletter-form">
+                  <div id="mc_embed_signup">
+                    <form
+                      action="https://terminymedyczne.us10.list-manage.com/subscribe/post?u=2754d6c462eeb3e54d2f33073&amp;id=0b5fde6c50"
+                      method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                      className="validate"
+                      target="_blank" noValidate>
+                      <div id="mc_embed_signup_scroll">
+                        <div className="mc-field-group form-group">
+                          <label htmlFor="mce-EMAIL"></label>
+                          <input placeholder="Wpisz adres email" type="email" value="" name="EMAIL"
+                                 className="required email" id="mce-EMAIL"/>
+                        </div>
+                        <div className="mc-field-group form-group">
+                          <label htmlFor="mce-IMIE"></label>
+                          <input placeholder="Wpisz imię" type="text" value="" name="IMIE" className="" id="mce-IMIE"/>
+                        </div>
+                        <div id="mce-responses" className="clear">
+                          <div className="response" id="mce-error-response" style={{display: 'none'}}></div>
+                          <div className="response" id="mce-success-response" style={{display: 'none'}}></div>
+                        </div>
+                        <div style={{position: 'absolute', left: '-5000px'}} aria-hidden="true"><input type="text"
+                                                                                                       name="b_2754d6c462eeb3e54d2f33073_0b5fde6c50"
+                                                                                                       tabIndex="-1"
+                                                                                                       value=""/></div>
+                        <div className="clear"><input type="submit" value="Zapisz się" name="subscribe"
+                                                      id="mc-embedded-subscribe"
+                                                      className="form-control"/></div>
                       </div>
-                      <p className="form-text"><i className="icon icon-lock"></i>Your data is protected. We never spam
-                        in your inbox</p>
                     </form>
                   </div>
                 </div>
               </div>
-            </div> */}
+            </div>
+          </div>
 
           <div className="row margin-decrese">
             <div className="col-lg-3 col-sm-4 col-6 col-margin">
