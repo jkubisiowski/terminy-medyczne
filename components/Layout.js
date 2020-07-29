@@ -5,7 +5,6 @@ function Layout(props) {
   return (
     <>
       <TMHead></TMHead>
-      <div className="site-wrapper">
         <header className="site-header">
           <div className="container">
             <Navbar bg="light" expand="lg">
@@ -25,9 +24,7 @@ function Layout(props) {
             </Navbar>
           </div>
         </header>
-
         {props.children}
-
         <section className="feature-section">
           <div className="shape">
             <img src="/image/landing-1-shape.svg" alt=""/>
@@ -467,7 +464,6 @@ function Layout(props) {
             </div>
           </div>
         </div>
-      </div>
       <script src="/plugins/jquery/jquery.min.js"></script>
       <script src="/plugins/jquery/jquery-migrate.min.js"></script>
       <script src="/plugins/bootstrap-4.3.1/js/bootstrap.bundle.js"></script>
