@@ -1,34 +1,50 @@
 import Head from "next/head";
 import Header from "../components/Header";
+import {Nav, Navbar, NavDropdown} from "react-bootstrap";
 
 function Layout(props) {
   return (
     <>
       <Header></Header>
       <div className="site-wrapper">
-        <header className="site-header">
-          <div className="container">
-            <div className="row justify-content-left align-items-center position-relative">
-              <div className="col-sm-3 col-6 col-lg-2 col-xl-2 order-lg-1">
-                <div className="brand">
-                  <a href="/"><img src="/image/main-logo.png" alt=""/></a>
-                </div>
-              </div>
-              <div className="col-sm-1 col-6 col-lg-7 col-xl-6 offset-xl-1 position-static order-lg-2">
-                <div className="main-navigation">
-                  <ul className="main-menu">
-                    <li className="menu-item"><a href="/">Sprawdź termin</a></li>
-                    <li className="menu-item"><a href="#o-nas">O nas</a></li>
-                    <li className="menu-item"><a href="#o-projekcie">O projekcie</a></li>
-                    <li className="menu-item"><a href="/kategorie">Kategorie</a></li>
-                    <li className="menu-item"><a href="#kontakt">Kontakt</a></li>
-                  </ul>
-                </div>
-                <div className="mobile-menu"></div>
-              </div>
-            </div>
-          </div>
-        </header>
+        {/*<header className="site-header">*/}
+        {/*  <div className="container">*/}
+        {/*    <div className="row justify-content-left align-items-center position-relative">*/}
+        {/*      <div className="col-sm-3 col-6 col-lg-2 col-xl-2 order-lg-1">*/}
+        {/*        <div className="brand">*/}
+        {/*          <a href="/"><img src="/image/main-logo.png" alt=""/></a>*/}
+        {/*        </div>*/}
+        {/*      </div>*/}
+        {/*      <div className="col-sm-1 col-6 col-lg-7 col-xl-6 offset-xl-1 position-static order-lg-2">*/}
+        {/*        <div className="main-navigation">*/}
+        {/*          <ul className="main-menu">*/}
+        {/*            <li className="menu-item"><a href="/">Sprawdź termin</a></li>*/}
+        {/*            <li className="menu-item"><a href="#o-nas">O nas</a></li>*/}
+        {/*            <li className="menu-item"><a href="#o-projekcie">O projekcie</a></li>*/}
+        {/*            <li className="menu-item"><a href="/kategorie">Kategorie</a></li>*/}
+        {/*            <li className="menu-item"><a href="#kontakt">Kontakt</a></li>*/}
+        {/*          </ul>*/}
+        {/*        </div>*/}
+        {/*        <div className="mobile-menu"></div>*/}
+        {/*      </div>*/}
+        {/*    </div>*/}
+        {/*  </div>*/}
+        {/*</header>*/}
+        <Navbar bg="light" expand="lg">
+          <Navbar.Brand href="/">
+            <img className="navbar-logo" src="/image/main-logo.png" alt=""/>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="mr-auto">
+              <Nav.Link href="/">Sprawdź termin</Nav.Link>
+              <Nav.Link href="#o-nas">O nas</Nav.Link>
+              <Nav.Link href="#o-projekcie">O projekcie</Nav.Link>
+              <Nav.Link href="/kategorie">Kategorie</Nav.Link>
+              <Nav.Link href="#kontakt">Kontakt</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
         {props.children}
 
         <section className="feature-section">
@@ -464,7 +480,7 @@ function Layout(props) {
               <div className="col-lg-2 col-sm-4 col-6 col-margin">
                 <div className="single-footer">
                   <div className="footer-title"></div>
-                 
+
                 </div>
               </div>
             </div>
