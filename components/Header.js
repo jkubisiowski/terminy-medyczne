@@ -16,7 +16,7 @@ function Header(props) {
           <link rel="stylesheet" href="/css/settings.css"/>
           <link rel="stylesheet" href="/css/style.css"/>
           <link rel="stylesheet" type="text/css" href="https://cdn.wpcc.io/lib/1.0.2/cookieconsent.min.css"/>
-          {process.env.NODE_ENV === 'production' && (
+          {process.env.NODE_ENV !== 'production' && (
             <>
               <script id="mcjs"
               dangerouslySetInnerHTML={{
@@ -39,7 +39,7 @@ function Header(props) {
               <script
                 dangerouslySetInnerHTML={{
                   __html: `
-                  window.addEventListener("load", function(){window.wpcc.init({"border":"thin","corners":"small","colors":{"popup":{"background":"#f8f8f8","text":"#000000","border":"#1290a4"},"button":{"background":"#1290a4","text":"#ffffff"}},"position":"top","content":{"href":"https://terminymedyczne.pl/polityka-prywatnosci","button":"Zgadzam się","link":"Czytaj więcej...","message":"W ramach witryny stosujemy pliki cookies. W każdej chwili można dokonać zmiany ustawień dotyczących cookies w swojej przeglądarce. "}})});
+                  window.addEventListener("load", function(){window.wpcc.init({"border":"thin","corners":"small","colors":{"popup":{"background":"#d4f2fa","text":"#000000","border":"#1290a4"},"button":{"background":"#1290a4","text":"#ffffff"}},"position":"top","content":{"href":"https://terminymedyczne.pl/polityka-prywatnosci","button":"Zapoznałem się","link":"Czytaj więcej...","message":"Korzystając z Serwisu zgadzasz się z naszym Regulaminem i Polityką Prywatności. Szczegółowo opisaliśmy w nich zasady korzystania z portalu TerminyMedyczne.pl oraz sposób gromadzenia, wykorzystania i udostępnienia danych osobowych."}})});
                 `,
                 }}
               />

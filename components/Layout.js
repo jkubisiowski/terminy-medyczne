@@ -18,10 +18,10 @@ function Layout(props) {
                 <div className="main-navigation">
                   <ul className="main-menu">
                     <li className="menu-item"><a href="/">Sprawdź termin</a></li>
-                    <li className="menu-item"><a href="#about-us">O nas</a></li>
-                    <li className="menu-item"><a href="#about-project">O projekcie</a></li>
+                    <li className="menu-item"><a href="#o-nas">O nas</a></li>
+                    <li className="menu-item"><a href="#o-projekcie">O projekcie</a></li>
                     <li className="menu-item"><a href="/kategorie">Kategorie</a></li>
-                    <li className="menu-item"><a href="#contact">Kontakt</a></li>
+                    <li className="menu-item"><a href="#kontakt">Kontakt</a></li>
                   </ul>
                 </div>
                 <div className="mobile-menu"></div>
@@ -87,7 +87,7 @@ function Layout(props) {
 
         </section>
 
-        <section id="about-us" className="content-section-01">
+        <section id="o-nas" className="content-section-01">
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-xl-5  col-sm-6 col-10">
@@ -100,24 +100,24 @@ function Layout(props) {
                 <div className="content-right-content">
                   <h2>Konrad Janik</h2>
                   <p>
-                    Lekarz w trakcie specjalizacji z radiologii i diagnostyki obrazowej. Studiował w Collegium Medicum
-                    Uniwersytetu Jagiellońskiego w Krakowie oraz Julius-Maximilians-Universität w Würzburgu.
+                    Lekarz w trakcie specjalizacji z&nbsp;radiologii i&nbsp;diagnostyki obrazowej. Studiował w Collegium Medicum
+                    Uniwersytetu Jagiellońskiego w&nbsp;Krakowie oraz Julius-Maximilians-Universität w&nbsp;Würzburgu.
                   </p>
                   <ul className="content-list">
                     <li>
                       <span><i className="icon icon-check-2"></i></span>Kierownik działu medycznego Instytutu IBSS BIOMED S.A.
                     </li>
                     <li>
-                      <span><i className="icon icon-check-2"></i></span>Tłumacz specjalistycznych tekstów medycznych z języka angielskiego i niemieckiego
+                      <span><i className="icon icon-check-2"></i></span>Tłumacz specjalistycznych tekstów medycznych z&nbsp;języka angielskiego i&nbsp;niemieckiego
                     </li>
                     <li>
                       <span><i className="icon icon-check-2"></i></span>Laureat teleturnieju “Milionerzy”
                     </li>
                   </ul>
                   <p>
-                  Interesują mnie zastosowania sztucznej inteligencji w medycynie, potencjał mikrobiomu oraz futurologia medyczna.
+                  Interesują go zastosowania sztucznej inteligencji w&nbsp;medycynie, potencjał mikrobiomu oraz futurologia medyczna.
                   </p>
-                  <p><b><i>Jeśli nie potrafisz czegoś prosto wytłumaczyć - to znaczy, że tak naprawdę tego nie rozumiesz.</i></b> ~ cytat przypisywany A. Einsteinowi</p>
+                  <p><i> Jeśli nie potrafisz czegoś prosto wytłumaczyć - to znaczy, że tak naprawdę tego nie rozumiesz.</i></p>
                 </div>
               </div>
             </div>
@@ -140,29 +140,29 @@ function Layout(props) {
                   </p>
                   <ul className="content-list">
                     <li>
-                      <span><i className="icon icon-check-2"></i></span>Specjalista ds. Digital Marketingu w branży farmaceutycznej oraz wyrobów medycznych
+                      <span><i className="icon icon-check-2"></i></span>Specjalista ds. Digital Marketingu w&nbsp;branży farmaceutycznej oraz wyrobów medycznych
                     </li>
                     <li>
-                      <span><i className="icon icon-check-2"></i></span>Doświadczenie jako Konsultant Medyczny w agencji marketingowej
+                      <span><i className="icon icon-check-2"></i></span>Doświadczenie jako Konsultant Medyczny w&nbsp;agencji marketingowej
                     </li>
                     <li>
-                      <span><i className="icon icon-check-2"></i></span>Autorka fakultetu Medycyna Przyszłości prowadzonego w Zakładzie Informatyki Medycznej i Telemedycyny WUM
+                      <span><i className="icon icon-check-2"></i></span>Autorka fakultetu Medycyna Przyszłości prowadzonego w&nbsp;Zakładzie Informatyki Medycznej i&nbsp;Telemedycyny WUM
                     </li>
                     <li>
-                      <span><i className="icon icon-check-2"></i></span>Prelegentka na konferencjach oraz warsztatach związanych z telemedycyną i wykorzystaniem nowych technologii w medycynie
+                      <span><i className="icon icon-check-2"></i></span>Prelegentka na konferencjach oraz warsztatach związanych z&nbsp;telemedycyną i&nbsp;wykorzystaniem nowych technologii w&nbsp;medycynie
                     </li>
                   </ul>
                   <p>
-                  Innowacje pomagają poprawić komfort i skuteczność leczenia, dlatego chcę je tworzyć oraz wykorzystywać w pracy lekarza.
+                  Innowacje pomagają poprawić komfort i&nbsp;skuteczność leczenia, dlatego chce je tworzyć oraz wykorzystywać w pracy lekarza.
                   </p>
-                  <p><b><i>Pacjent, który lepiej rozumie swoją chorobę, łatwiej przechodzi proces leczenia i uzyskuje lepsze efekty zdrowotne. </i></b></p>
+                  <p><i>Pacjent, który lepiej rozumie swoją chorobę, łatwiej przechodzi proces leczenia i&nbsp;uzyskuje lepsze efekty zdrowotne. </i></p>
                 </div>
               </div>
             </div>
           </div>
 
         </section>
-        <section id="about-project" className="content-section-03">
+        <section id="o-projekcie" className="content-section-03">
           <div className="shape">
             <img src="/image/landing-4.svg" alt=""/>
           </div>
@@ -197,7 +197,7 @@ function Layout(props) {
 
         </section>
 
-        <section id="contact" className="pricing-section">
+        <section id="kontakt" className="pricing-section">
           <div className="shape">
             <img src="/image/landing-2-shape.svg" alt=""/>
           </div>
@@ -443,7 +443,7 @@ function Layout(props) {
                     <h6>Powered by</h6>
                   </div>
                   <ul className="footer-list">
-                  <li><a href="https://karolinavirtualassistant.com/" target="_blank">karolinavirtualassistant.com</a></li>
+                  <li><a href="https://karolinavirtualassistant.com/" target="_blank">KarolinaVA</a></li>
                   <li><a href="https://www.jakubkubisiowski.pl/" target="_blank">jakubkubisiowski.pl</a></li>
                   </ul>
                 </div>
@@ -454,7 +454,7 @@ function Layout(props) {
                     <h6>Copyright</h6>
                   </div>
                   <ul className="footer-list">
-                  <li><a href="https://terminymedyczne.pl" target="_blank">TerminyMedyczne.pl</a></li>
+                  <li><a href="/">TerminyMedyczne.pl</a></li>
                   <li><a href="https://iconscout.com/illustrations/doctor" target="_blank">Doctor
                       Illustration</a> by <a href="https://iconscout.com/contributors/manypixels-gallery"
                                              target="_blank">Manypixels Gallery</a></li>
