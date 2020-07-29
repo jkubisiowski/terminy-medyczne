@@ -321,7 +321,6 @@ function Layout(props) {
       <script src="/plugins/jquery/jquery.min.js"></script>
       <script src="/plugins/jquery/jquery-migrate.min.js"></script>
       <script src="/plugins/bootstrap-4.3.1/js/bootstrap.bundle.js"></script>
-      <script src="/plugins/meanmenu/jquery.meanmenu.js"></script>
     </>
   )
 }
