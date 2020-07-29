@@ -16,7 +16,7 @@ function Header(props) {
           <link rel="stylesheet" href="/css/settings.css"/>
           <link rel="stylesheet" href="/css/style.css"/>
           <link rel="stylesheet" type="text/css" href="https://cdn.wpcc.io/lib/1.0.2/cookieconsent.min.css"/>
-          {process.env.NODE_ENV !== 'production' && (
+          {process.env.NODE_ENV === 'production' && (
             <>
               <script id="mcjs"
               dangerouslySetInnerHTML={{

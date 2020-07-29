@@ -437,7 +437,7 @@ function Layout(props) {
                   </ul>
                 </div>
               </div>
-              <div className="col-lg-3 col-sm-4 col-6 col-margin">
+              <div className="col-lg-2 col-sm-4 col-6 col-margin">
                 <div className="single-footer">
                   <div className="footer-title">
                     <h6>Powered by</h6>
