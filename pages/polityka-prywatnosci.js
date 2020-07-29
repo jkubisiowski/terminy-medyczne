@@ -50,7 +50,7 @@ const Policy = () => {
                     <li>w przypadku dobrowolnej subskrypcji do newslettera: imię i adres e-mail. Portal w niektórych wypadkach może zapisać informację ułatwiającą powiązanie danych w formularzu z adresem e-mail użytkownika wypełniającego formularz. W takim wypadku adres e-mail użytkownika pojawia się wewnątrz adresu URL strony zawierającej formularz.</li>
                     <li>w przypadku przesłania wiadomości e-mail na jeden z adresów podanych na Portalu: w szczególności adres e-mail, imię i/lub nazwisko Użytkownika, treść wiadomości, informacje pozyskane w toku korespondencji. Podanie tych danych jest dobrowolne.</li>
                     <li>w przypadku reklamacji: w szczególności adres e-mail, imię i/lub nazwisko Użytkownika, treść reklamacji, informacje pozyskane w toku reklamacji, w tym okoliczności zdarzenia będącego jej przyczyną. Podanie tych danych jest dobrowolne. W toku rozpatrywania reklamacji możemy przetwarzać szereg innych informacji, takich jak informacje o korzystaniu przez Użytkownika z usługi, plików cookie lub innych podobnych technologii oraz informacji o jego urządzeniach.</li>
-                    <li>nformacje dotyczące urządzenia Użytkownika w celu zapewnienia poprawności działania usług: informacje o parametrach połączenia i sesji, adres IP urządzenia, informacje zawarte w plikach cookie lub innych podobnych technologiach, dane dotyczące sesji, , dane używanej przeglądarki internetowej, dane dotyczące urządzenia, a także dane dotyczące aktywności na Stronie, w tym poszczególnych podstronach, ilości spędzanego czasu na poszczególnych podstronach <b>oraz</b> korzystania z poszczególnych funkcjonalności usług. Informacje te nie zawierają danych dotyczących tożsamości Użytkownika, jednak w połączeniu z innymi informacjami mogą stanowić dane osobowe i w związku z tym Administrator obejmuje je pełną ochroną w zgodzie z RODO.</li>
+                    <li>informacje dotyczące urządzenia Użytkownika w celu zapewnienia poprawności działania usług: informacje o parametrach połączenia i sesji, adres IP urządzenia, informacje zawarte w plikach cookie lub innych podobnych technologiach, dane dotyczące sesji, , dane używanej przeglądarki internetowej, dane dotyczące urządzenia, a także dane dotyczące aktywności na Stronie, w tym poszczególnych podstronach, ilości spędzanego czasu na poszczególnych podstronach <b>oraz</b> korzystania z poszczególnych funkcjonalności usług. Informacje te nie zawierają danych dotyczących tożsamości Użytkownika, jednak w połączeniu z innymi informacjami mogą stanowić dane osobowe i w związku z tym Administrator obejmuje je pełną ochroną w zgodzie z RODO.</li>
                 </ul>
             </p>
             <p><b>Gdzie przechowujemy Twoje dane?</b>
@@ -67,7 +67,7 @@ const Policy = () => {
             W niektórych sytuacjach Administrator ma prawo przekazywać Twoje dane osobowe innym odbiorcom, jeśli będzie to niezbędne do wykonania zawartej z Tobą umowy lub do zrealizowania obowiązków ciążących na Administratorze. Dotyczy to takich grup odbiorców, jak:
                 <ul>
                     <li>firmy obsługujące serwery,</li>
-                    <li>irmy i osoby fizyczne obsługujące i edytujące zawartość Portalu,</li>
+                    <li>firmy i osoby fizyczne obsługujące i edytujące zawartość Portalu,</li>
                     <li>firmy świadczące usługi informatyczne (IT),</li>
                     <li>firmy świadczące usługi marketingowe i PR,</li>
                     <li>firmy świadczące usługi prawne i doradcze,</li>
@@ -121,7 +121,7 @@ const Policy = () => {
             <p>
             Okres dostępności danych statystycznych w narzędziach Google Analytics, MailChimp dostarczanych przez zewnętrznych dostawców rozwiązań analitycznych może być dłuższy niż 60 dni, i pozostaje to poza zakresem decyzyjnym Administratora.
             Inne dane osobowe przechowywane są przez okres niezbędny do realizacji celu, w którym zostały zebrane.
-            Po upływie okresu przetwarzania dane są nieodwracalnie usuwane lub anonimizowane.
+            Po upływie okresu przetwarzania dane są nieodwracalnie usuwane lub zanonimizowane.
             </p>
             <p><b>Linki do innych stron internetowych</b>
             <br></br>

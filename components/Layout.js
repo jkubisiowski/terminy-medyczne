@@ -5,30 +5,6 @@ function Layout(props) {
   return (
     <>
       <Header></Header>
-      <div className="site-wrapper">
-        <header className="site-header">
-          <div className="container">
-            <div className="row justify-content-left align-items-center position-relative">
-              <div className="col-sm-3 col-6 col-lg-2 col-xl-2 order-lg-1">
-                <div className="brand">
-                  <a href="/"><img src="/image/main-logo.png" alt=""/></a>
-                </div>
-              </div>
-              <div className="col-sm-1 col-6 col-lg-7 col-xl-6 offset-xl-1 position-static order-lg-2">
-                <div className="main-navigation">
-                  <ul className="main-menu">
-                    <li className="menu-item"><a href="/">Sprawdź termin</a></li>
-                    <li className="menu-item"><a href="#o-nas">O nas</a></li>
-                    <li className="menu-item"><a href="#o-projekcie">O projekcie</a></li>
-                    <li className="menu-item"><a href="/kategorie">Kategorie</a></li>
-                    <li className="menu-item"><a href="#kontakt">Kontakt</a></li>
-                  </ul>
-                </div>
-                <div className="mobile-menu"></div>
-              </div>
-            </div>
-          </div>
-        </header>
         {props.children}
 
         <section className="feature-section">
@@ -178,11 +154,11 @@ function Layout(props) {
                   <h2>Naszą misją jest usprawnienie komunikacji na linii lekarz-pacjent</h2>
                   <p>
                     <b>Jesteś pacjentem?</b> Masz dostęp do rzetelnych, sprawdzonych informacji by lepiej zrozumieć
-                    skomplikowane rezultaty badań, wyniki konsultacji i wyisy ze szpitala.
+                    skomplikowane rezultaty badań, wyniki konsultacji i wypisy ze szpitala.
                   </p>
                   <p>
                     <b>Jesteś lekarzem?</b> Masz pod ręką wygodne narzędzie, które pomaga sprawnie wytłumaczyć
-                    pacjentowi zaawiłe pojęcia.
+                    pacjentowi zawiłe pojęcia.
                   </p>
                   {/* <div className="content-bottom-part">
                     <p></p>
@@ -432,8 +408,8 @@ function Layout(props) {
                         <i className="icon icon-logo-instagram"></i>
                       </a>
                     </li>
-                    <li><a href="polityka-prywatnosci" target="_blank">Polityka prywatności</a></li>
-                    <li><a href="regulamin-serwisu" target="_blank">Regulamin serwisu</a></li>
+                    <li><a href="polityka-prywatnosci">Polityka prywatności</a></li>
+                    <li><a href="regulamin-serwisu">Regulamin serwisu</a></li>
                   </ul>
                 </div>
               </div>
@@ -470,7 +446,6 @@ function Layout(props) {
             </div>
           </div>
         </div>
-      </div>
       <script src="/plugins/jquery/jquery.min.js"></script>
       <script src="/plugins/jquery/jquery-migrate.min.js"></script>
       <script src="/plugins/bootstrap-4.3.1/js/bootstrap.bundle.js"></script>
