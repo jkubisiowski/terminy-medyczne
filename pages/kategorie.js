@@ -1,19 +1,8 @@
 import Layout from "../components/Layout";
 import groq from "groq";
-import {useEffect, useState} from "react";
 import client from "../client";
 
-const Categories = () => {
-  const [categories, setCategories] = useState([]);
-
-  useEffect(() => {
-    client.fetch(query)
-      .then(data => {
-        console.log(data)
-        setCategories(data)
-      })
-  }, [])
-
+const Categories = (props) => {
   return (
     <Layout>
       <section className="hero-area term">
@@ -22,7 +11,7 @@ const Categories = () => {
             <h2>Kategorie</h2>
           </div>
           <div className="row">
-          {categories.map(x =>
+          {Object.values(props).map(x =>
             (x.slug && <div key={x.title} className="col-sm-12 col-md-6 col-lg-3 mb--30">
                 <div className="feature-card">
                   <div className="card-content">
@@ -41,5 +30,9 @@ const Categories = () => {
   )
 }
 const query = groq`*[_type == "category"]`
+
+Categories.getInitialProps = async function (context) {
+  return await client.fetch(query)
+}
 
 export default Categories;
