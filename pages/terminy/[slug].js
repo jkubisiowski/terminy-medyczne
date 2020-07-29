@@ -27,7 +27,7 @@ const TermPage = (props) => {
               </div>
             </div>
             <div className="col-lg-8 order-1">
-              <div className="hero-content">
+              <div className="hero-content definition">
                 <h2>{props.name}</h2>
                 <div className="term-body">
                   <BlockContent

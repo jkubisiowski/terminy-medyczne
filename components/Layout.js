@@ -176,11 +176,11 @@ function Layout(props) {
                   <h2>Naszą misją jest usprawnienie komunikacji na linii lekarz-pacjent</h2>
                   <p>
                     <b>Jesteś pacjentem?</b> Masz dostęp do rzetelnych, sprawdzonych informacji by lepiej zrozumieć
-                    skomplikowane rezultaty badań, wyniki konsultacji i wyisy ze szpitala.
+                    skomplikowane rezultaty badań, wyniki konsultacji i wypisy ze szpitala.
                   </p>
                   <p>
                     <b>Jesteś lekarzem?</b> Masz pod ręką wygodne narzędzie, które pomaga sprawnie wytłumaczyć
-                    pacjentowi zaawiłe pojęcia.
+                    pacjentowi zawiłe pojęcia.
                   </p>
                   {/* <div className="content-bottom-part">
                     <p></p>
@@ -430,12 +430,12 @@ function Layout(props) {
                         <i className="icon icon-logo-instagram"></i>
                       </a>
                     </li>
-                    <li><a href="polityka-prywatnosci" target="_blank">Polityka prywatności</a></li>
-                    <li><a href="regulamin-serwisu" target="_blank">Regulamin serwisu</a></li>
+                    <li><a href="polityka-prywatnosci">Polityka prywatności</a></li>
+                    <li><a href="regulamin-serwisu">Regulamin serwisu</a></li>
                   </ul>
                 </div>
               </div>
-              <div className="col-lg-3 col-sm-4 col-6 col-margin">
+              <div className="col-lg-2 col-sm-4 col-6 col-margin">
                 <div className="single-footer">
                   <div className="footer-title">
                     <h6>Powered by</h6>
@@ -468,7 +468,6 @@ function Layout(props) {
             </div>
           </div>
         </div>
-      </div>
       <script src="/plugins/jquery/jquery.min.js"></script>
       <script src="/plugins/jquery/jquery-migrate.min.js"></script>
       <script src="/plugins/bootstrap-4.3.1/js/bootstrap.bundle.js"></script>

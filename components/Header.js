@@ -45,6 +45,29 @@ function Header(props) {
               />
             </>)}
         </Head>
+        <header className="site-header">
+          <div className="container">
+            <div className="row justify-content-left align-items-center position-relative">
+              <div className="col-sm-3 col-6 col-lg-2 col-xl-2 order-lg-1">
+                <div className="brand">
+                  <a href="/"><img src="/image/main-logo.png" alt=""/></a>
+                </div>
+              </div>
+              <div className="col-sm-1 col-6 col-lg-7 col-xl-6 offset-xl-1 position-static order-lg-2">
+                <div className="main-navigation">
+                  <ul className="main-menu">
+                    <li className="menu-item"><a href="/">Sprawdź termin</a></li>
+                    <li className="menu-item"><a href="#o-nas">O nas</a></li>
+                    <li className="menu-item"><a href="#o-projekcie">O projekcie</a></li>
+                    <li className="menu-item"><a href="/kategorie">Kategorie</a></li>
+                    <li className="menu-item"><a href="#kontakt">Kontakt</a></li>
+                  </ul>
+                </div>
+                <div className="mobile-menu"></div>
+              </div>
+            </div>
+          </div>
+        </header>
         </>
         )
     }
