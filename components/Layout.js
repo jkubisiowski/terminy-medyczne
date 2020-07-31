@@ -28,7 +28,7 @@ function Layout(props) {
 
       <div className="footer-section">
         <div className="container">
-          <div className="footer-newsletter-section">
+          {/* <div className="footer-newsletter-section">
             <div className="row justify-content-center">
               <div className="col-lg-10 col-xl-8">
                 <div className="footer-newsletter-content">
@@ -72,7 +72,7 @@ function Layout(props) {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className="row margin-decrese">
             <div className="col-lg-3 col-sm-4 col-6 col-margin">
