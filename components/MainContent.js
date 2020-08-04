@@ -71,7 +71,7 @@ function MainContent(props) {
 
             <div className="col-xl-5 offset-xl-1 col-sm-6">
               <div className="content-right-content">
-                <h2>Konrad Janik</h2>
+                <h3>Konrad Janik</h3>
                 <p>
                   Lekarz w trakcie specjalizacji z&nbsp;radiologii i&nbsp;diagnostyki obrazowej. Studiował w Collegium
                   Medicum
@@ -111,16 +111,12 @@ function MainContent(props) {
             </div>
             <div className="col-xl-5  col-sm-6 order-sm-1">
               <div className="content-left-content">
-                <h2>Małgorzata Łukaszewicz</h2>
+                <h3>Małgorzata Łukaszewicz</h3>
                 <p>
                   Lekarka stażystka w Uniwersyteckim Centrum Klinicznym WUM.
                   Ukończyła I Wydział Lekarski Warszawskiego Uniwersytetu Medycznego.
                 </p>
                 <ul className="content-list">
-                  <li>
-                    <span><i className="icon icon-check-2"></i></span>Specjalista ds. Digital Marketingu w&nbsp;branży
-                    farmaceutycznej oraz wyrobów medycznych
-                  </li>
                   <li>
                     <span><i className="icon icon-check-2"></i></span>Doświadczenie jako Konsultant Medyczny
                     w&nbsp;agencji marketingowej
@@ -159,7 +155,7 @@ function MainContent(props) {
             </div>
             <div className="col-xl-5  offset-xl-1 col-lg-6 col-md-7 col-sm-6 ">
               <div className="content-left-content">
-                <h2>Naszą misją jest usprawnienie komunikacji na linii lekarz-pacjent</h2>
+                <h3>Naszą misją jest usprawnienie komunikacji na linii lekarz-pacjent</h3>
                 <p>
                   <b>Jesteś pacjentem?</b> Masz dostęp do rzetelnych, sprawdzonych informacji by lepiej zrozumieć
                   skomplikowane rezultaty badań, wyniki konsultacji i wypisy ze szpitala.
@@ -187,7 +183,7 @@ function MainContent(props) {
             </div>
             <div className="col-xl-5  col-sm-6 order-sm-1">
               <div className="content-left-content section-title">
-                <h2>Masz pytania?</h2>
+                <h3>Masz pytania?</h3>
                 <p>
                   Chętnie na nie odpowiemy!
                 </p>
