@@ -59,6 +59,9 @@ function MainContent(props) {
 
       <section id="o-nas" className="content-section-01">
         <div className="container">
+        <div className="section-title text-center">
+            <h3>Twórcy projektu</h3>
+          </div>
           <div className="row justify-content-center">
             <div className="col-xl-5  col-sm-6 col-10">
               <div className="content-img">
