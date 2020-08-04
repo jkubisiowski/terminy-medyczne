@@ -737,7 +737,7 @@
 .content-right-content p, .content-left-content p {
   font-weight: 400;
   letter-spacing: -0.4px;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 30px;
   color: #333333;
 }
@@ -751,14 +751,14 @@
 
 @media (min-width: 768px) {
   .content-right-content p, .content-left-content p {
-    font-size: 20px;
+    font-size: 17px;
     line-height: 34px;
   }
 }
 
 @media (min-width: 992px) {
   .content-right-content p, .content-left-content p {
-    font-size: 21px;
+    font-size: 17px;
     line-height: 36px;
   }
 }
@@ -883,7 +883,7 @@
 }
 
 .content-list li {
-  font-size: 21px;
+  font-size: 17px;
   font-weight: 400;
   letter-spacing: -1px;
   line-height: 32px;
@@ -913,14 +913,14 @@
 
 @media (min-width: 768px) {
   .content-list li {
-    font-size: 20px;
+    font-size: 17px;
     line-height: 34px;
   }
 }
 
 @media (min-width: 992px) {
   .content-list li {
-    font-size: 21px;
+    font-size: 17px;
     line-height: 36px;
   }
 }
