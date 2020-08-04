@@ -1447,13 +1447,24 @@
   background: rgba(18, 144, 164, 0.07);
   padding-left: 17px;
   border-color: transparent;
+  font-size: 18px;
+  width: 320px;
 }
 
 @media (min-width: 480px) {
   .footer-newsletter-form .form-group input {
     margin-right: 10px;
     height: 60px;
-    width: calc(100% - 187px);
+  }
+}
+
+@media (min-width: 868px) {
+  .newsletter-container {
+    display: flex;
+  }
+
+  .newsletter-container button {
+    margin-top: 0;
   }
 }
 
@@ -1606,7 +1617,6 @@
   letter-spacing: -1.12px;
   border-radius: 3px;
   background-color: #1290a4;
-  margin-top: 20px;
   height: 60px;
   width: 177px;
   font-size: 18px;
@@ -1642,6 +1652,8 @@
   margin-bottom: 15px;
 }
 
-.searchInput {
+.search-input {
   background: #ffffff;
+  margin-bottom: 20px;
 }
+

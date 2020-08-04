@@ -4,8 +4,7 @@
     "sources": [
         "../scss/style.scss",
         "../scss/helpers/_variables.scss",
-        "../scss/helpers/_mixins.scss",
-        "../scss/_sections.scss"
+        "../scss/helpers/_mixins.scss"
     ],
     "names": [],
     "file": "style.css"

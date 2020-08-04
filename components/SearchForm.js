@@ -65,7 +65,7 @@ const SearchForm = (props) => {
       <NoSsr>
         <form className="SearchForm" onSubmit={onSubmit}>
           <div className="">
-            <div className="searchInput">
+            <div className="search-input">
             <Autocomplete
               value={value}
               onChange={(event, newValue) => {
