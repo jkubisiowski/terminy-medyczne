@@ -893,7 +893,7 @@
 
 .content-list li span {
   font-size: inherit;
-  margin-right: 18px;
+  margin-right: 8px;
 }
 
 .content-list li span i {
@@ -1656,4 +1656,3 @@
   background: #ffffff;
   margin-bottom: 20px;
 }
-
