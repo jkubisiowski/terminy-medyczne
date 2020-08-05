@@ -866,22 +866,6 @@
   margin-left: 20px;
 }
 
-.content-list {
-  padding-top: 26px;
-}
-
-@media (min-width: 768px) {
-  .content-list {
-    padding-top: 15px;
-  }
-}
-
-@media (min-width: 992px) {
-  .content-list {
-    padding-top: 26px;
-  }
-}
-
 .content-list li {
   font-size: 17px;
   font-weight: 400;
